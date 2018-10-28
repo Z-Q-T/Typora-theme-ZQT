@@ -37,10 +37,10 @@ html {
 }
 
 #write {
-	max-width: 54rem;
+	max-width: 53rem;
 	/*行长（每行字数）*/
 	text-align: justify;
-	padding: 2rem;
+	padding: 2rem 1.5rem;
 }
 
 /* 文档最开头的空白 */
@@ -89,7 +89,7 @@ h2 {
 	/* margin: 0 0 2rem; */
 	padding: 0;
 	text-align: center;
-	margin: 4rem 2em 1rem;
+	margin: 4rem 0em 1rem;
 	/* border-bottom: 1px solid #cccccc; */
 }
 
@@ -100,7 +100,7 @@ h3 {
 	font-size: 1.5rem;
 	line-height: 2rem;
 	text-align: center;
-	padding: 0 2em;
+	/* padding: 0 2em; */
 	margin-top: 3rem;
 	margin-bottom: 1rem;
 }
@@ -111,7 +111,7 @@ h4 {
 	/* padding-top: 1.25rem; */
 	font-weight: normal;
 	font-size: 1.33rem;
-	padding: 0 2em 0 0;
+	/* padding: 0 2em 0 0; */
 	margin-top: 4rem;
 	margin-bottom: 1rem;
 }
@@ -121,7 +121,7 @@ h5 {
 	color: var(--colour-identity);
 	font-size: 1rem;
 	font-weight: normal;
-	padding: 0 2em 0 0;
+	/* padding: 0 2em 0 0; */
 	margin-top: 3rem;
 	margin-bottom: 1rem;
 }
@@ -132,7 +132,7 @@ h6 {
 	font-size: 1rem;
 	font-weight: normal;
 	/* text-align: center; */
-	padding: 0 5em 0 0;
+	/* padding: 0 5em 0 0; */
 	margin-top: 1.67rem;
 	margin-bottom: 1rem;
 }

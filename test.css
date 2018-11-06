@@ -5,6 +5,7 @@
 	--font-second: "segoe UI semibold", "HYqihei 75S", sans-serif;
 	--font-third: "Bembo std", "source han serif", serif;
 	--font-body: "segoe UI", "HYqihei 55S", sans-serif;
+	--font-bold: "segoeuibold", "HYqihei 80S", sans-serif;
 	--code-background-colour:#2c3e50;
 }
 
@@ -29,6 +30,7 @@
 html, body, #write {
 	/* background: #fcfcfc; */
 	font-family: var(--font-body);
+	
 }
 
 html {
@@ -146,6 +148,12 @@ p {
 	/* text-indent: 2rem; */
 }
 
+/* 加粗文本 */
+p strong{
+	font-family: var(--font-bold);
+	font-weight: normal; /*这会取代浏览器的用户代理加粗设置，如果用户的电脑上没有--font-bold字体，那可能导致加粗文本显示出来和普通文本一样。*/
+}
+
 /* 无序列表 */
 
 ul {
@@ -208,6 +216,8 @@ blockquote, blockquote p {
 /* 文章注释（导出时不显示） */
 
 .md-comment {
+	font-family: var(--font-body);
+	font-size: 1rem;
 	color: rgb(247, 172, 102);
 }
 

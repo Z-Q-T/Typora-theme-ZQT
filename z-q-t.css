@@ -1,7 +1,7 @@
 :root {
 	--colour-body: rgb(22, 22, 22);
 	--colour-identity: rgb(32, 79, 235);
-	--colour-iden-second:rgb(122, 122, 122);
+	--colour-iden-second:rgb(139, 139, 139);
 	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
 	/* --font-heaviest: "Segoe UI Black", "HYqihei 105", sans-serif; */
 	--font-second: "segoeuisemibold", "HYqihei 75S", sans-serif;
@@ -445,6 +445,16 @@ code {
     color: rgb(138, 188, 253);
 }
 
+/* 段落内数学公式 */
+.md-inline-math{
+	background-color: rgb(255, 255, 255);
+	text-indent: 0rem;
+	margin:0 1px ;
+	padding: 0 6px;
+	border:1px solid rgb(196, 196, 196);
+	border-radius: 2px;
+}
+
 /* 数学公式块的背景颜色 */
 .md-mathblock-input {
 	padding: 0;
@@ -613,6 +623,13 @@ code {
 	left: -1.875rem;
 	top: .125rem;
 	padding: 2px;
+}
+
+/* 水平分割线 */
+hr{
+	margin: 2rem 1rem;
+	border-top-width: 1px;
+	border-color: rgb(204, 204, 204);
 }
 
 /*@media screen and (min-width: 48em) {

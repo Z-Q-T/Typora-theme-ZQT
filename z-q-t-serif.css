@@ -1,12 +1,11 @@
 :root {
 	--colour-identity: rgb(22, 22, 22);
 	--colour-body: rgb(22, 22, 22);
-	/* --font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif; */
-	--font-heaviest: "Source sans pro black", "Source han sans heavy", sans-serif;
-	--font-second: "Source sans pro bold", "Source han sans bold", sans-serif;
-	--font-serif: "Bembo std", "source han serif", serif;
-	--font-body: "segoe UI", "HYqihei 55S", sans-serif;
-	--font-bold: "segoeuibold", "HYqihei 80S", sans-serif;
+	--font-heaviest: "bembo std", "HYqihei 95S", serif;
+	--font-second: "bembo std", "HYqihei 75S", serif;
+	--font-third: "Bembo std", "source han serif", serif;
+	--font-body: "Bembo std", "HYqihei 55S", serif;
+	--font-bold: "bembo std", "HYqihei 80S", serif;
 	--code-background-colour:#2c3e50;
 }
 
@@ -31,6 +30,7 @@
 html, body, #write {
 	/* background: #fcfcfc; */
 	font-family: var(--font-body);
+	font-weight: 600;
 	
 }
 
@@ -40,7 +40,7 @@ html {
 }
 
 #write {
-	max-width: 43rem;
+	max-width: 53rem;
 	/*行长（每行字数）*/
 	text-align: justify;
 	padding: 2rem 1.5rem;
@@ -73,13 +73,13 @@ h1 {
 	color:white;
 	border-radius: 15px;
 	width: auto; */
-	/* font-weight: normal; */
+	font-weight: 900;
 	font-size: 2.5rem;
 	line-height: 3.5rem;
-	margin: 6rem auto 1.67rem;
+	margin-top: 8rem;
+	margin-bottom: 1.67rem;
 	padding: 2rem 0 1rem 0;
 	text-align: center;
-	max-width: 35rem;
 	/* border-top: 1px solid #aaaaaa;
 	border-bottom: 1px solid #aaaaaa; */
 }
@@ -87,7 +87,7 @@ h1 {
 h2 {
 	font-family: var(--font-second);
 	color: var(--colour-identity);
-	/* font-weight: normal; */
+	font-weight: bold;
 	font-size: 1.75rem;
 	line-height: 2.5rem;
 	/* margin: 0 0 2rem; */
@@ -100,7 +100,7 @@ h2 {
 h3 {
 	font-family: var(--font-second);
 	color: var(--colour-identity);
-	/* font-weight: normal; */
+	font-weight: bold;
 	font-size: 1.5rem;
 	line-height: 2rem;
 	text-align: center;
@@ -113,10 +113,10 @@ h4 {
 	font-family: var(--font-second);
 	color: var(--colour-identity);
 	/* padding-top: 1.25rem; */
-	/* font-weight: normal; */
+	font-weight: bold;
 	font-size: 1.33rem;
 	/* padding: 0 2em 0 0; */
-	margin-top: 3rem;
+	margin-top: 4rem;
 	margin-bottom: 1.67rem;
 }
 
@@ -124,37 +124,36 @@ h5 {
 	font-family: var(--font-second);
 	color: var(--colour-identity);
 	font-size: 1rem;
-	/* font-weight: normal; */
+	font-weight: bold;
 	/* padding: 0 2em 0 0; */
-	margin-top: 2rem;
-	margin-bottom: 0.67rem;
+	margin-top: 3rem;
+	margin-bottom: 1.67rem;
 }
 
 h6 {
 	font-family: var(--font-second);
 	color: var(--colour-body);
 	font-size: 1rem;
-	/* font-weight: normal; */
+	font-weight: bold;
 	/* text-align: center; */
 	/* padding: 0 5em 0 0; */
-	margin-top: 1rem;
-	margin-bottom: 0.67rem;
+	margin-top: 2rem;
+	margin-bottom: 1.67rem;
 }
 
 p {
 	color: var(--colour-body);
 	font-size: 1rem;
 	line-height: 1.67rem;
-	/* margin: 1.67rem 0 1.67rem 0; */
+	margin: 1.67rem 0 1.67rem 0;
 	/*段落之间空一行*/
-	margin: 0;
-	text-indent: 2rem;
+	/* text-indent: 2rem; */
 }
 
 /* 加粗文本 */
 p strong{
 	font-family: var(--font-bold);
-	font-weight: normal; /*这会取代浏览器的用户代理加粗设置，如果用户的电脑上没有--font-bold字体，那可能导致加粗文本显示出来和普通文本一样。*/
+	font-weight: bold; /*这会取代浏览器的用户代理加粗设置，如果用户的电脑上没有--font-bold字体，那可能导致加粗文本显示出来和普通文本一样。*/
 }
 
 /* 无序列表 */
@@ -206,7 +205,7 @@ ol li p {
 /* 引用 */
 
 blockquote {
-	margin: 1rem 0 1rem 1rem;
+	margin: 1rem 0 0 1rem;
 	padding: 0.5rem 1rem 0.5rem 0.8rem;
 	border-left: 0.2rem solid #ccc;
 }
@@ -245,7 +244,7 @@ code {
 
 /* 单独代码段 */
 .md-fences {
-	background: var(--code-background-colour);
+	background: #2c3e50;
 	border: 0px solid #ddd;
 	border-radius: 10px;
 	margin: 1.67rem 1rem 1.67rem 1rem;

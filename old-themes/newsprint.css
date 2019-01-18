@@ -1,6 +1,10 @@
+:root {
+	--rawblock-edit-panel-bd: #e5e5e5;
+}
+
 /* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
 
-@include-when-export url(https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+@include-when-export url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
 
 /* =========== */
 
@@ -8,27 +12,27 @@
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: normal;
-    src: local('PT Serif'), local('PTSerif-Regular'), url('./newsprint/pt-serif-v9-latin-regular.woff') format('woff');
+    src: local('PT Serif'), local('PTSerif-Regular'), url(./newsprint/PT_Serif-Web-Regular.ttf);
 }
 @font-face {
     font-family: 'PT Serif';
     font-style: italic;
     font-weight: normal;
-    src: local('PT Serif'), local('PTSerif-Italic'), url('./newsprint/pt-serif-v9-latin-italic.woff') format('woff');
+    src: local('PT Serif'), local('PTSerif-Italic'), url('./newsprint/PT_Serif-Web-Italic.ttf')
 }
 
 @font-face {
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: bold;
-    src: local('PT Serif'), local('PTSerif-Bold'), url('./newsprint/pt-serif-v9-latin-700.woff') format('woff');
+    src: local('PT Serif'), local('PTSerif-Bold'), url('./newsprint/PT_Serif-Web-Bold.ttf')
 }
 
 @font-face {
     font-family: 'PT Serif';
     font-style: italic;
     font-weight: bold;
-    src: local('PT Serif'), local('PTSerif-BoldItalic'), url('./newsprint/pt-serif-v9-latin-700italic.woff') format('woff');
+    src: local('PT Serif'), local('PTSerif-BoldItalic'), url('./newsprint/PT_Serif-Web-BoldItalic.ttf')
 }
 
 :root {
@@ -37,11 +41,9 @@
 	--active-file-text-color: white;
 	--bg-color: #f3f2ee;
 	--text-color: #1f0909;
-	--control-text-color: #444;
-	--rawblock-edit-panel-bd: #e5e5e5;
 
 	--select-text-bg-color: rgba(32, 43, 51, 0.63);
-  --select-text-font-color: white;
+    --select-text-font-color: white;
 }
 
 pre {
@@ -55,7 +57,7 @@ html {
 
 html, body {
 	background-color: #f3f2ee;
-	font-family: "PT Serif", 'Times New Roman', Times, serif;
+	font-family: "PT Serif", 'Times New Roman', Times;
 	color: #1f0909;
 	line-height: 1.5em;
 }
@@ -224,18 +226,12 @@ td {
 code,
 .md-fences {
 	background-color: #dadada;
+	padding-left: 1ch;
+	padding-right: 1ch;
 }
-
-code {
-	padding-left: 2px;
-	padding-right: 2px;
-}
-
 .md-fences {
 	margin-left: 2em;
 	margin-bottom: 3em;
-	padding-left: 1ch;
-	padding-right: 1ch;
 }
 
 pre,
@@ -254,7 +250,7 @@ h1 {
 
 p + ul,
 p + ol{
-	margin-top: .5em;
+	margin-top: -1em;
 }
 
 h3 + ul,
@@ -271,15 +267,6 @@ h6 + ol {
 li > ul,
 li > ol {
 	margin-top: inherit;
-	margin-bottom: 0;
-}
-
-li ol>li {
-	list-style-type: lower-alpha;
-}
-
-li li ol>li{
-	list-style-type: lower-roman;
 }
 
 h2,
@@ -299,12 +286,6 @@ blockquote {
 	border-color: #bababa;
 	color: #656565;
 }
-
-blockquote ul,
-blockquote ol {
-	margin-left:0;
-}
-
 .ty-table-edit {
 	background-color: transparent;
 }
@@ -357,7 +338,7 @@ hr {
 }
 
 .md-image>.md-meta{
-	font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+	font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
 }
 
 
@@ -464,7 +445,7 @@ hr {
 }
 
 header, .context-menu, .megamenu-content, footer {
-	font-family: "PT Serif", 'Times New Roman', Times, serif;
+	font-family: "PT Serif", 'Times New Roman', Times;
     color: #1f0909;
 }
 
@@ -503,7 +484,7 @@ header, .context-menu, .megamenu-content, footer {
 }
 
 .typora-sourceview-on #toggle-sourceview-btn,
-.ty-show-word-count #footer-word-count {
+.show-word-count #footer-word-count {
 	background: #c7c5c5;
 }
 
@@ -567,14 +548,4 @@ input {
 .megamenu-menu-header:hover, 
 .megamenu-menu-header:focus {
 	color: inherit;
-}
-
-.dropdown-menu .divider {
-	border-color: #e5e5e5;
-}
-
-/* https://github.com/typora/typora-issues/issues/2046 */
-.os-windows-7 strong,
-.os-windows-7 strong  {
-	font-weight: 760;
 }

@@ -12,7 +12,7 @@
     --item-hover-bg-color: #0a0d16;
     --control-text-color: #b7b7b7;
     --control-text-hover-color: #eee;
-    --window-border: 1px solid #555;
+    --window-border: 1px dashed #9b9b9b;
 
     --active-file-bg-color: rgb(34, 34, 34);
     --active-file-border-color: #8d8df0;
@@ -42,6 +42,7 @@ body {
 
 #write {
     max-width: 914px;
+    padding-top: 20px;
 }
 
 html,
@@ -52,7 +53,6 @@ select,
 textarea,
 div.code-tooltip-content {
     color: #b8bfc6;
-    border-color: transparent;
 }
 
 div.code-tooltip,
@@ -237,10 +237,6 @@ iframe,
     /* 24px */
 }
 
-li > blockquote {
-	margin-bottom: 0;
-}
-
 audio:not([controls]) {
     display: none;
 }
@@ -369,6 +365,10 @@ a {
 hr {
     background: #474d54;
     /* variable */
+}
+
+#write>*:first-child {
+    margin-top: 40px;
 }
 
 h1 {
@@ -658,14 +658,11 @@ h6.md-focus .md-attr,
 
 /** UI for electron */
 
-.context-menu,
-#spell-check-panel,
-#footer-word-count-info {
+.context-menu {
     background-color: #42464A;
 }
 
-.context-menu.dropdown-menu .divider,
-.dropdown-menu .divider {
+.context-menu.dropdown-menu .divider {
     background-color: #777777;
 }
 
@@ -707,6 +704,12 @@ footer {
 #recent-file-panel-action-btn {
     background: inherit;
     border: 1px grey solid;
+}
+
+.megamenu-menu-panel .btn:hover, 
+.megamenu-menu-panel .btn:focus, 
+.megamenu-menu-panel .btn.focus {
+    color: white;
 }
 
 .megamenu-menu-panel .dropdown-menu > li > a {
@@ -786,7 +789,7 @@ footer {
 
 .typora-sourceview-on #toggle-sourceview-btn,
 #footer-word-count:hover,
-.ty-show-word-count #footer-word-count {
+.show-word-count #footer-word-count {
     background: #333333;
 }
 
@@ -877,6 +880,10 @@ footer {
     border-top: none;
 }
 
+.sidebar-footer {
+    border-top: 1px solid #555;
+}
+
 .file-node-background {
     height: 32px;
 }
@@ -899,6 +906,10 @@ footer {
 #ty-tooltip {
     background-color: black;
     color: #eee;
+}
+
+#write {
+    cursor: -webkit-image-set(url("night/cursor.png") 1x, url("night/cursor@2x.png") 2x) 8 8, auto;
 }
 
 .md-task-list-item>input {

@@ -17,7 +17,13 @@ body {
 	margin: 0 auto;
 	margin-bottom: 2em;
 	line-height: 1.53;
-	padding-top: 40px;
+}
+
+#write>h2:first-child,
+#write>h3:first-child,
+#write>h4:first-child,
+#write>p:first-child{
+	margin-top: 1.2em;
 }
 
 /* Typography
@@ -271,8 +277,4 @@ table tbody+tbody {
 
 .md-fences .code-tooltip {
 	bottom: -2em !important;
-}
-
-.dropdown-menu .divider {
-	border-color: #e5e5e5;
 }

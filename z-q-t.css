@@ -49,19 +49,19 @@ html {
 /* 文档最开头的空白 */
 
 #write>h1:first-child {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 #write>h2:first-child {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 #write>h3:first-child {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 #write>h4:first-child {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 /* 标题与正文 */
@@ -77,11 +77,11 @@ h1 {
 	font-size: 2.5rem;
 	line-height: 3.5rem;
 	margin: 6rem auto 1.67rem;
-	padding: 2rem 0 1rem 0;
+	padding: 2rem 0 0.5rem 0;
 	text-align: center;
 	max-width: 35rem;
-	/* border-top: 1px solid #aaaaaa;
-	border-bottom: 1px solid #aaaaaa; */
+	
+	/* border-top: 5px solid #383838;  */
 }
 
 h2 {
@@ -93,7 +93,8 @@ h2 {
 	/* margin: 0 0 2rem; */
 	padding: 0;
 	text-align: center;
-	margin: 4rem 0em 1.67rem;
+	margin: 4rem auto 1.67rem;
+	width: fit-content;
 	/* border-bottom: 1px solid #cccccc; */
 }
 
@@ -114,16 +115,19 @@ h4 {
 	color: var(--colour-identity);
 	/* padding-top: 1.25rem; */
 	/* font-weight: normal; */
-	font-size: 1.33rem;
+	font-size: 1.5rem;
 	/* padding: 0 2em 0 0; */
 	margin-top: 3rem;
-	margin-bottom: 1.67rem;
+	margin-bottom: 1rem;
+	border-left: 6px solid ;
+	border-left-color: var(--colour-identity);
+	padding-left: 0.5em;
 }
 
 h5 {
 	font-family: var(--font-second);
 	color: var(--colour-identity);
-	font-size: 1rem;
+	font-size: 1.2rem;
 	/* font-weight: normal; */
 	/* padding: 0 2em 0 0; */
 	margin-top: 2rem;
@@ -138,7 +142,7 @@ h6 {
 	/* text-align: center; */
 	/* padding: 0 5em 0 0; */
 	margin-top: 1rem;
-	margin-bottom: 0.67rem;
+	margin-bottom: 0.5rem;
 }
 
 p {
@@ -206,8 +210,8 @@ ol li p {
 /* 引用 */
 
 blockquote {
-	margin: 1rem 0 1rem 1rem;
-	padding: 0.5rem 1rem 0.5rem 0.8rem;
+	margin: 1rem 1rem 1rem 1.2rem;
+	padding: 0.5rem 1rem 0.5rem 0.6rem;
 	border-left: 0.2rem solid #ccc;
 }
 
@@ -227,15 +231,15 @@ blockquote, blockquote p {
 /* 代码字体 */
 
 code, pre, samp, tt {
-	font-family: "ZQT'sConsolas", 'consolas', monospace;
+	font-family: "ZQT'sConsolas", 'consolas', "source han sans hw", monospace;
 }
 
 /* 段落内代码 */
 
 code {
-	background: var(--code-background-colour);
-	color: rgb(233, 233, 233);
-	border: 0px solid #ddd;
+	background: rgb(233, 233, 233);
+	color: var(--code-background-colour);
+	border: 1px solid rgb(188, 188, 188);
 	border-radius: 5px;
 	padding: .1em 0.33rem;
 	font-size: 0.9em;

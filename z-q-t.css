@@ -1,7 +1,7 @@
 :root {
 	--colour-body: rgb(22, 22, 22);
-	--colour-identity: rgb(18, 61, 204);
-	--colour-iden-second:rgb(85, 113, 207);
+	--colour-identity: rgb(32, 79, 235);
+	--colour-iden-second:rgb(122, 122, 122);
 	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
 	/* --font-heaviest: "Segoe UI Black", "HYqihei 105", sans-serif; */
 	--font-second: "segoeuisemibold", "HYqihei 75S", sans-serif;
@@ -9,7 +9,7 @@
 	--font-body: "segoe UI", "HYqihei 55S", sans-serif;
 	--font-bold: "segoeuibold", "HYqihei 85S", sans-serif;
 	/* --font-italic: "segoeuiitalic", "HYZhongsongs", sans-serif; */
-	--font-code:"ZQT'sConsolas", 'consolas', "source han sans hw", monospace;;
+	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "source han sans hw", monospace;;
 	--code-background-colour:#2c3e50;
 	--mathblock-background-colour:rgb(38, 87, 88);
 }
@@ -142,7 +142,7 @@ h4 {
 	margin-top: 3rem;
 	margin-bottom: 1rem;
 	border-left: 6px solid ;
-	border-left-color: var(--colour-iden-second);
+	border-left-color: var(--colour-identity);
 	padding-left: 12px;
 }
 
@@ -196,14 +196,16 @@ p strong{
 /* 无序列表 */
 
 ul {
-	padding-left: 2rem;
+	margin: 0rem,36px;
+	padding: 0 0 0 2rem !important;
 }
 
 ul li {
 	/* ul里面也有p，行高属性会和大p的一样 */
 	/* line-height:50px; */
-	margin-top: 0rem;
-	margin-bottom: 0rem;
+
+	
+	margin-left: -4px;
 	/* -webkit-padding-start: 4rem; */
 }
 
@@ -212,7 +214,7 @@ ul li p {
 	font-size: 1rem;
 	line-height: 1.67rem;
 	margin: 0 0 0 0;
-	margin-bottom: 0rem;
+	/* margin-bottom: 0rem; */
 	text-indent: 0;
 }
 
@@ -223,7 +225,7 @@ ol {
 }
 
 ol li {
-	/* ul里面也有p，行高属性会和大p的一样 */
+	/* ol里面也有p，行高属性会和大p的一样 */
 	/* line-height:50px; */
 	margin-top: 0rem;
 	margin-bottom: 0rem;
@@ -235,7 +237,6 @@ ol li p {
 	font-size: 1rem;
 	line-height: 1.67rem;
 	margin: 0 0 0 0;
-	margin-bottom: 0rem;
 	text-indent: 0;
 }
 
@@ -249,7 +250,7 @@ blockquote {
 
 blockquote, blockquote p {
 	line-height: 1.67rem;
-	color: #6f6f6f;
+	color: #777777;
 }
 
 /* 文章注释（导出时不显示） */
@@ -462,15 +463,22 @@ code {
 }
 /* 数学公式块的字体颜色 */
 .md-rawblock-tooltip{
+	font-size: 0.75rem;
 	color: rgb(233, 233, 233);
 }
 .md-rawblock-before, .md-rawblock-after{
-	font-family: var(--font-code);
+	font-family: var(--font-body);
+	font-size:0.9rem;
 	color: #ccc;
 }
 .md-mathblock-input .CodeMirror-linenumber{
 	font-family: var(--font-code);
-	color: #ccc;
+	font-size: 0.75rem;
+	color: rgb(154, 164, 165);
+}
+.md-mathblock-input .CodeMirror-line{
+	font-family: var(--font-code);
+	font-size: 0.75rem;
 }
 /* .CodeMirror-sizer{
 	background-color: #80CBC4;
@@ -490,10 +498,11 @@ code {
 .md-task-list-item>input {
 	width: 1.25rem;
 	height: 1.25rem;
+	border:none;
 	display: block;
 	-webkit-appearance: initial;
 	top: 0px;
-	margin: 0 0 0 -1.33rem;
+	margin: 0 0 0 -1.5rem;
 }
 
 .md-task-list-item>input:focus {
@@ -514,7 +523,7 @@ code {
 
 .md-task-list-item>input:checked:before, .md-task-list-item>input[checked]:before {
 	background: #333;
-	border-width: 2px;
+	border-width: 1px;
 	display: inline-block;
 	transition: background-color 200ms ease-in-out;
 }
@@ -532,9 +541,9 @@ code {
 	-moz-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	position: absolute;
-	top: 0.35rem;
+	top: 0.4rem;
 	left: 0.1rem;
-	width: 0.9375rem;
+	width: 0.9rem;
 	height: 0.5rem;
 	border: 3px solid #fff;
 	border-top: 0;
@@ -553,15 +562,15 @@ code {
 }
 
 .task-list-item input {
-	top: 0.125rem;
+	top: 0.15rem;
 	/*圆圈圈的位置高低*/
 }
 
 .task-list-item input:before {
 	content: "";
 	display: inline-block;
-	width: 1rem;
-	height: 1rem;
+	width: 1.1rem;
+	height: 1.1rem;
 	vertical-align: middle;
 	text-align: center;
 	border: 1px solid gray;

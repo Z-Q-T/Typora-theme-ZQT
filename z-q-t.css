@@ -671,13 +671,32 @@ table tbody+tbody {
 	border-top: 2px solid #ddd
 }
 .md-table-edit{
-	background-color: #80CBC4;
-	height:24px;
-	border-radius: 3px;
+	background-color: rgb(241, 241, 241);
+	height:22px;
+	border-radius: 2px;
+	border: 1px solid #bebebe;
 	width: 100% !important;
-	margin-top: -25px !important;
-
+	margin: -24px 0 0 0 !important;
+	left:0px;
 }
+.btn-default{
+	margin: -10px 0 0 0 ;
+}
+.btn-group{
+	margin: -1px 0 0 0 ;
+}
+.md-resize-table{
+	margin-left: 3px;
+	margin-right: 3px;
+}
+.md-delete-table{
+	margin-left: 10px;
+	/* background-color: rgb(238, 163, 167) !important; */
+}
+.md-align-left, .md-align-center, .md-align-right{
+	margin-left: 0px !important;
+}
+
 /*@media screen and (min-width: 48em) {
 	.h1,
 	h1 {

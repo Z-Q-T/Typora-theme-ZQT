@@ -205,7 +205,7 @@ ul li {
 	/* line-height:50px; */
 
 	
-	margin-left: -4px;
+	margin-left: 0px;
 	/* -webkit-padding-start: 4rem; */
 }
 
@@ -217,7 +217,11 @@ ul li p {
 	/* margin-bottom: 0rem; */
 	text-indent: 0;
 }
-
+.ul-list{
+	color: rgb(127, 127, 127);
+	padding-left: 3rem !important;
+	padding-right: 2rem; 
+}
 /* 有序列表 */
 
 ol {
@@ -239,7 +243,11 @@ ol li p {
 	margin: 0 0 0 0;
 	text-indent: 0;
 }
-
+.ol-list{
+	color: rgb(127, 127, 127);
+	padding-left: 3rem;
+	padding-right: 2rem;
+}
 /* 引用 */
 
 blockquote {
@@ -532,8 +540,8 @@ code {
 }
 
 .md-task-list-item>input:checked:before, .md-task-list-item>input[checked]:before {
-	background: #333;
-	border-width: 1px;
+	background: rgb(9, 141, 101);
+	border-width:0px;
 	display: inline-block;
 	transition: background-color 200ms ease-in-out;
 }
@@ -552,8 +560,8 @@ code {
 	transform: rotate(-45deg);
 	position: absolute;
 	top: 0.4rem;
-	left: 0.1rem;
-	width: 0.9rem;
+	left: 0.14rem;
+	width: 0.8rem;
 	height: 0.5rem;
 	border: 3px solid #fff;
 	border-top: 0;
@@ -563,6 +571,9 @@ code {
 }
 /* 以上内容摘自Typora自带主题pixyll，略有修改，可能受版权保护 */
 
+input{
+	color: rgb(9, 141, 101);
+}
 .task-list {
 	padding-left: 0;
 }
@@ -640,6 +651,7 @@ table tr th {
 	font-family: var(--font-bold);
 	font-weight: normal;
 	border-bottom: 2px solid #000000;
+	/* border-top: 2px solid #000000; */
 }
 .td-span {
 	min-width: 2rem;
@@ -663,7 +675,9 @@ table thead th {
 	vertical-align: bottom
 }
 
-table caption+thead tr:first-child th, table caption+thead tr:first-child td, table colgroup+thead tr:first-child th, table colgroup+thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
+table caption+thead tr:first-child th, table caption+thead tr:first-child td, table colgroup+thead tr:first-child th, table colgroup+thead tr:first-child td, 
+table thead:first-child tr:first-child th,
+ table thead:first-child tr:first-child td {
 	border-top: 0
 }
 

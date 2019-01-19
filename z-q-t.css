@@ -632,6 +632,52 @@ hr{
 	border-color: rgb(204, 204, 204);
 }
 
+/* 表格 */
+.md-table-fig{
+	margin: 1.25rem 0;
+}
+table tr th {
+	font-family: var(--font-bold);
+	font-weight: normal;
+	border-bottom: 2px solid #000000;
+}
+.td-span {
+	min-width: 2rem;
+}
+
+table {
+	margin-bottom: 20px
+}
+
+table th, table td {
+	padding: 8px 0.5rem;
+	line-height: 1.25rem;
+	vertical-align: top;
+	border-top: 1px solid #ddd
+}
+/* table th {
+	font-weight: bold
+} */
+/* 上面这一小段用于浏览器兼容 */
+table thead th {
+	vertical-align: bottom
+}
+
+table caption+thead tr:first-child th, table caption+thead tr:first-child td, table colgroup+thead tr:first-child th, table colgroup+thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
+	border-top: 0
+}
+
+table tbody+tbody {
+	border-top: 2px solid #ddd
+}
+.md-table-edit{
+	background-color: #80CBC4;
+	height:24px;
+	border-radius: 3px;
+	width: 100% !important;
+	margin-top: -25px !important;
+
+}
 /*@media screen and (min-width: 48em) {
 	.h1,
 	h1 {
@@ -706,32 +752,7 @@ a:hover {
 	text-decoration: underline;
 }
 
-table {
-	margin-bottom: 20px
-}
 
-table th, table td {
-	padding: 8px;
-	line-height: 1.25rem;
-	vertical-align: top;
-	border-top: 1px solid #ddd
-}
-
-table th {
-	font-weight: bold
-}
-
-table thead th {
-	vertical-align: bottom
-}
-
-table caption+thead tr:first-child th, table caption+thead tr:first-child td, table colgroup+thead tr:first-child th, table colgroup+thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
-	border-top: 0
-}
-
-table tbody+tbody {
-	border-top: 2px solid #ddd
-}
 
 /* Chrome 29+ */
 

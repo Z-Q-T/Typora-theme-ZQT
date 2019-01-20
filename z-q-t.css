@@ -12,7 +12,7 @@
 	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "source han sans hw", monospace;;
 	--code-background-colour:#2c3e50;
 	--mathblock-background-colour:rgb(38, 87, 88);
-	--footnote-num-color:rgb(104, 135, 185);
+	--footnote-num-color:rgb(65, 71, 82);
 }
 
 /*定义全局色彩和字体变量*/
@@ -188,11 +188,19 @@ p strong{
 	font-weight: normal; /*这会取代浏览器的用户代理加粗设置，如果用户的电脑上没有--font-bold字体，那可能导致加粗文本显示出来和普通文本一样。*/
 }
 
+/* 超链接 */
+a, .md-def-url {
+	color: #0730b4;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
 /* 斜体文本 （中文改为衬线体）*/
 /* i, cite, em, var, address, dfn {
 	font-family: var(--font-italic);
 	font-style: normal; /*这会取代浏览器的用户代理斜体设置*/
-} 
+
 
 /* 无序列表 */
 
@@ -720,17 +728,18 @@ table tbody+tbody {
 	padding: 0px 3px 1px 3px !important;
 }
 .md-def-name{
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 	color: var(--footnote-num-color);
 	font-family: var(--font-bold);
 	font-size: 0.9rem;
+	font-weight: normal;
 }
 .md-def-name::before{
-	content: '[' !important;
+	content: '【' !important;
 	color: var(--footnote-num-color);
 }
 .md-def-name::after{
-	content: ']' !important;
+	content: '】' !important;
 	color: var(--footnote-num-color);
 }
 .md-def-split{
@@ -739,8 +748,90 @@ table tbody+tbody {
 .md-def-content{
 	font-family: var(--font-body);
 	font-size: 0.9rem;
-	color: #333;
+	color: rgb(41, 41, 41);
 }
+
+/* 链接引用 */
+.md-def-link{
+	font-family: var(--font-body);
+	font-weight: normal;
+}
+.md-def-link .md-def-name::before{
+	content: '['!important;
+	color: var(--footnote-num-color);
+}
+.md-def-link .md-def-name::after{
+	content: ']' !important;
+	color: var(--footnote-num-color);
+}
+.md-def-link .md-def-name{
+	padding: 0.5rem; 
+}
+/* .md-def-link .md-def-content{
+	text-decoration: underline;
+} */
+.md-def-title{
+	font-family: var(--font-bold);
+	font-weight: normal;
+	margin-left: 1rem;
+}
+.md-def-title::before, .md-def-title::after{
+	content: '';
+}
+
+/* 目录 */
+.md-toc-content{
+	background-color: #eeeeee;
+	border: 2px solid #999;
+	margin: 40px 20px;
+	padding: 20px;
+}
+.md-toc-content a{
+	color: #000000;
+}
+/* p .md-toc-content{
+	text-indent: 0px !important;
+} */
+.md-toc-item{
+	margin-top: 0.5rem;
+	text-indent: 0rem ;
+}
+.md-toc-h1{
+	font-family: var(--font-heaviest);
+	font-size:1.5rem;
+	font-weight: normal;
+	margin-left:2rem; 
+	text-indent: -1rem;
+}
+.md-toc-h1 .md-toc-inner::before{
+	content: '⁍ ';
+}
+.md-toc-h2{
+	font-family: var(--font-bold);
+	font-size:1.3rem;
+	font-weight: normal;
+}
+.md-toc-h3{
+	font-family: var(--font-second);
+	font-size:1.2rem;
+	font-weight: normal;
+}
+.md-toc-h4{
+	font-family: var(--font-body);
+	font-size:1.2rem;
+	font-weight: normal;
+}
+.md-toc-h5{
+	font-family: var(--font-body);
+	font-size:1.1rem;
+	font-weight: normal;
+}
+.md-toc-h6{
+	font-family: var(--font-body);
+	font-size:1rem;
+	font-weight: normal;
+}
+
 /*@media screen and (min-width: 48em) {
 	.h1,
 	h1 {
@@ -806,14 +897,7 @@ table tbody+tbody {
 	}
 }
 
-a, .md-def-url {
-	color: #0730b4;
-	text-decoration: none;
-}
 
-a:hover {
-	text-decoration: underline;
-}
 
 
 

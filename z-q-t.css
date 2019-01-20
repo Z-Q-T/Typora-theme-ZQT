@@ -12,6 +12,7 @@
 	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "source han sans hw", monospace;;
 	--code-background-colour:#2c3e50;
 	--mathblock-background-colour:rgb(38, 87, 88);
+	--footnote-num-color:rgb(104, 135, 185);
 }
 
 /*定义全局色彩和字体变量*/
@@ -711,6 +712,35 @@ table tbody+tbody {
 	margin-left: 0px !important;
 }
 
+/* 脚注 */
+.md-footnote{
+	background-color: rgb(201, 219, 247) !important;
+	color: rgb(0, 0, 0) !important;
+	/* border: 1px solid rgb(121, 121, 121); */
+	padding: 0px 3px 1px 3px !important;
+}
+.md-def-name{
+	padding: 0 0.5rem;
+	color: var(--footnote-num-color);
+	font-family: var(--font-bold);
+	font-size: 0.9rem;
+}
+.md-def-name::before{
+	content: '[' !important;
+	color: var(--footnote-num-color);
+}
+.md-def-name::after{
+	content: ']' !important;
+	color: var(--footnote-num-color);
+}
+.md-def-split{
+	min-width: 0.5rem;
+}
+.md-def-content{
+	font-family: var(--font-body);
+	font-size: 0.9rem;
+	color: #333;
+}
 /*@media screen and (min-width: 48em) {
 	.h1,
 	h1 {

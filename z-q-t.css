@@ -2,6 +2,7 @@
 	--colour-body: rgb(22, 22, 22);
 	--colour-identity: rgb(32, 79, 235);
 	--colour-iden-second:rgb(139, 139, 139);
+	--colour-iden-third:rgb(234, 234, 234);
 	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
 	/* --font-heaviest: "Segoe UI Black", "HYqihei 105", sans-serif; */
 	--font-second: "segoeuisemibold", "HYqihei 75S", sans-serif;
@@ -10,9 +11,9 @@
 	--font-bold: "segoeuibold", "HYqihei 85S", sans-serif;
 	/* --font-italic: "segoeuiitalic", "HYZhongsongs", sans-serif; */
 	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "source han sans hw", monospace;;
-	--code-background-colour:#2c3e50;
-	--mathblock-background-colour:rgb(38, 87, 88);
-	--footnote-num-color:rgb(65, 71, 82);
+	--colour-code-background:#2c3e50;
+	--colour-mathblock-background:rgb(38, 87, 88);
+	--colour-footnote-num:rgb(65, 71, 82);
 }
 
 /*定义全局色彩和字体变量*/
@@ -86,7 +87,7 @@ html {
 h1 {
 	font-family: var(--font-heaviest);
 	color: var(--colour-body);
-	/* background-color: black;
+	/*	background-color: var(--colour-identity);
 	color:white;
 	border-radius: 15px;
 	width: auto; */
@@ -94,10 +95,16 @@ h1 {
 	font-size: 2.5rem;
 	line-height: 3.5rem;
 	margin: 6rem auto 1.67rem;
-	padding: 2rem 0 0.5rem 0;
-	text-align: center;
-	max-width: 35rem;
-	
+	/* padding: 2rem 0 0.5rem 0; */
+	padding: 0.25em 0.5em;
+	/* text-align: center; */
+	/* max-width: 35rem; */
+	width: fit-content !important;
+	border-left: var(--colour-identity) 1em solid;
+	border-right: var(--colour-identity) 1em solid;
+	/* border-radius: 1em; */
+	background-color: var(--colour-iden-third);
+	/* border-top: var(--colour-identity) 5px solid; */
 	/* border-top: 5px solid #383838;  */
 }
 
@@ -108,14 +115,13 @@ h2 {
 	font-size: 1.75rem;
 	line-height: 2.5rem;
 	/* margin: 0 0 2rem; */
-	padding: 0;
+	padding: 0 0.5em 0.1em 0.5em;
 	text-align: center;
 	margin: 4rem auto 1.67rem;
-	width: fit-content;
-	/* border-left: 10px solid ;
-	border-left-color: var(--colour-identity);
-	border-right: 10px solid ;
-	border-right-color: var(--colour-identity); */
+	width: fit-content !important;
+	max-width: 35rem;
+	border-radius: 0.75em;
+	background-color: var(--colour-iden-third);
 }
 
 h3 {
@@ -288,7 +294,7 @@ code, pre, samp, tt {
 
 code {
 	background: rgb(233, 233, 233);
-	color: var(--code-background-colour);
+	color: var(--colour-code-background);
 	border: 1px solid rgb(188, 188, 188);
 	border-radius: 5px;
 	padding: .1em 0.33rem;
@@ -299,7 +305,7 @@ code {
 
 /* 单独代码段 */
 .md-fences {
-	background: var(--code-background-colour)!important;
+	background: var(--colour-code-background)!important;
 	border: 0px solid #ddd;
 	border-radius: 10px;
 	margin: 1.67rem 1rem 1.67rem 1rem;
@@ -314,7 +320,7 @@ code {
 }
 
 .md-fences .code-tooltip {
-	background-color: var(--code-background-colour);
+	background-color: var(--colour-code-background);
 }
 
 /* 代码行数和代码的分割线 */
@@ -338,12 +344,12 @@ code {
 /* 代码高亮 */
 
 .cm-s-inner {
-	background-color: var(--code-background-colour);
+	background-color: var(--colour-code-background);
 	color: rgba(233, 237, 237, 1);
 }
 
 .cm-s-inner .CodeMirror-gutters {
-	background: var(--code-background-colour);
+	background: var(--colour-code-background);
 	color: rgb(83, 127, 126);
 	border: none;
 }
@@ -477,16 +483,16 @@ code {
 	padding: 0;
 }
 .md-mathblock-input .CodeMirror-sizer{
-	background-color: var(--mathblock-background-colour);
+	background-color: var(--colour-mathblock-background);
 }
 .md-rawblock-before, .md-rawblock-after, .md-rawblock-tooltip{
-	background-color: var(--mathblock-background-colour)!important;
+	background-color: var(--colour-mathblock-background)!important;
 }
 .md-mathblock-input .CodeMirror-linenumber{
-	background-color: var(--mathblock-background-colour);
+	background-color: var(--colour-mathblock-background);
 }
 .md-mathblock-input .CodeMirror-linenumbers{
-	background-color: var(--mathblock-background-colour);
+	background-color: var(--colour-mathblock-background);
 }
 /* 数学公式块的字体颜色 */
 .md-rawblock-tooltip{
@@ -729,18 +735,18 @@ table tbody+tbody {
 }
 .md-def-name{
 	padding: 0 1rem;
-	color: var(--footnote-num-color);
+	color: var(--colour-footnote-num);
 	font-family: var(--font-bold);
 	font-size: 0.9rem;
 	font-weight: normal;
 }
 .md-def-name::before{
 	content: '【' !important;
-	color: var(--footnote-num-color);
+	color: var(--colour-footnote-num);
 }
 .md-def-name::after{
 	content: '】' !important;
-	color: var(--footnote-num-color);
+	color: var(--colour-footnote-num);
 }
 .md-def-split{
 	min-width: 0.5rem;
@@ -758,11 +764,11 @@ table tbody+tbody {
 }
 .md-def-link .md-def-name::before{
 	content: '['!important;
-	color: var(--footnote-num-color);
+	color: var(--colour-footnote-num);
 }
 .md-def-link .md-def-name::after{
 	content: ']' !important;
-	color: var(--footnote-num-color);
+	color: var(--colour-footnote-num);
 }
 .md-def-link .md-def-name{
 	padding: 0.5rem; 

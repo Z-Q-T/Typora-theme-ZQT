@@ -330,6 +330,7 @@ blockquote::after {
     -webkit-transition: all 350ms;
 }
 
+
 /* 文章注释（导出时不显示） */
 
 .md-comment {
@@ -357,7 +358,9 @@ code {
 	margin-left: 0.33em;
 	margin-right: 0.33em;
 }
-
+blockquote code{
+	color: var(--colour-quote);
+}
 /* 单独代码段 */
 .md-fences {
 	background: var(--colour-code-background)!important;
@@ -368,6 +371,9 @@ code {
 	padding: 1em 1em;
 	/* margin-left: 1em;
 	margin-right: 1em; */
+}
+blockquote .md-fences {
+	border: 2px solid var(--colour-quote);
 }
 /**apply to code fences with plan text**/
 .md-fences {
@@ -389,11 +395,15 @@ code {
 .CodeMirror-linenumber {
 	color: #ccc;
 	margin: 0 2em 0 0.5em;
+	line-height: 1.5em !important;
 }
 
 /* 每行代码 */
 .CodeMirror pre {
 	padding-left: 1em;
+}
+.CodeMirror-line{
+	line-height: 1.5em !important;
 }
 
 /* 代码高亮 */

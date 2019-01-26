@@ -474,9 +474,14 @@ td {
     color: inherit;
 }
 
-.typora-quick-open-item.active {
+.typora-quick-open-item.active,
+.typora-quick-open-item:hover {
     background-color: #4D8BDB;
     color: white;
+}
+
+.typora-quick-open-item:hover {
+    background-color: rgba(77, 139, 219, 0.8);
 }
 
 .typora-search-spinner > div {

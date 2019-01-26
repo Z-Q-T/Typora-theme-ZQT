@@ -17,7 +17,8 @@
 	--colour-footnote-num:rgb(65, 71, 82);
 	--colour-content-second:rgb(222,222,222);
 	--colour-content-sec-sec:rgb(200,200,200);
-	--colour-quote: #777777;
+	--colour-quote: rgb(112, 136, 172);
+	--colour-quote-mark:#5c5c5c;
 }
 
 /*定义全局色彩和字体变量*/
@@ -273,7 +274,8 @@ blockquote {
 	margin: 1rem 1rem 1rem 1rem;
 	padding: 0.5rem 1rem;
 	/* border-left: 0.2rem solid #ccc; */
-	/* background-color: rgb(246,246,246); */
+	/* border-radius: 10px;
+	background-color: rgb(250, 249, 241); */
 }
 
 blockquote, blockquote p {
@@ -291,7 +293,7 @@ blockquote:before {
     font-size: 2rem;
     text-align: center;
     /* line-height: 1.5rem; */
-    color: var(--colour-quote);
+    color: var(--colour-quote-mark);
     /* background: #ddd; */
     float: left;
     position: absolute;
@@ -315,7 +317,7 @@ blockquote::after {
     font-size: 2rem;
     /* text-align: center; */
     /* line-height: 1.5rem; */
-    color: var(--colour-quote);
+    color: var(--colour-quote-mark);
     float: right;
     position: absolute;
     /* border-radius: 1rem; */

@@ -280,6 +280,9 @@ blockquote, blockquote p {
 	line-height: 30px;
 	color: var(--colour-quote);
 }
+blockquote li p {
+	color:var(--colour-quote);
+}
 
 blockquote:before {
 	/* content: '“'; */

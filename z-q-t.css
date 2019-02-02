@@ -11,7 +11,7 @@
 	--font-bold: "segoeuibold", "HYqihei 85S", sans-serif;
 	--font-thinnest: "segoeuil", "HYqihei 40S",sans-serif;
 	/* --font-italic: "segoeuiitalic", "HYZhongsongs", sans-serif; */
-	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "source han sans hw", monospace;;
+	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "HYqihei 65S", monospace;;
 	--colour-code-background:#2c3e50;
 	--colour-mathblock-background:rgb(38, 87, 88);
 	--colour-footnote-num:rgb(65, 71, 82);
@@ -957,6 +957,11 @@ table tbody+tbody {
 }
 .md-toc-h6 .md-toc-inner{
 	padding-left:3.25em;
+}
+
+/* 右键菜单 */
+.dropdown-menu{
+	padding: 5px 0px !important;
 }
 /*@media screen and (min-width: 48em) {
 	.h1,

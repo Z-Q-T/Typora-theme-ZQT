@@ -1,7 +1,7 @@
 :root {
 	--colour-body: rgb(22, 22, 22);
-	--colour-identity: rgb(32, 79, 235);
-	--colour-iden-second:rgb(139, 139, 139);
+	--colour-identity: rgb(0, 119, 216);
+	--colour-iden-second:rgb(167, 167, 167);
 	--colour-iden-third:rgb(234, 234, 234);
 	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
 	/* --font-heaviest: "Segoe UI Black", "HYqihei 105", sans-serif; */
@@ -268,8 +268,8 @@ ol li p {
 	padding-left: 3rem;
 	padding-right: 2rem;
 }
-/* 引用 */
 
+/* 引用 */
 blockquote {
 	margin: 1rem 1rem 1rem 1rem;
 	padding: 0.5rem 1rem;
@@ -963,6 +963,9 @@ table tbody+tbody {
 .dropdown-menu{
 	padding: 5px 0px !important;
 }
+
+
+
 /*@media screen and (min-width: 48em) {
 	.h1,
 	h1 {

@@ -450,6 +450,7 @@ td {
 
 .CodeMirror-gutters {
     background: transparent;
+    background: var(--bg-color);
     border-right: 1px solid transparent;
 }
 
@@ -908,11 +909,15 @@ footer {
 
 .md-task-list-item>input {
     margin-left: -1.3em;
-    margin-top: calc(1rem - 10px);
+    margin-top: 0.3rem;
     -webkit-appearance: none;
 }
 
 .md-mathjax-midline {
     background-color: #57616b;
     border-bottom: none;
+}
+
+footer.ty-footer {
+    border-color: #656565;
 }

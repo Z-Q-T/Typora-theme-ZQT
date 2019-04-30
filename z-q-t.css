@@ -1,17 +1,10 @@
 :root {
+	--colour-grey-1: rgb(55,55,55);
+	--colour-grey-2:rgb(111,111,111);
 	--colour-body: rgb(22, 22, 22);
-	--colour-identity: rgb(0, 119, 216);
-	--colour-iden-second:rgb(167, 167, 167);
-	--colour-iden-third:rgb(234, 234, 234);
-	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
-	/* --font-heaviest: "Segoe UI Black", "HYqihei 105", sans-serif; */
-	--font-second: "segoeuisemibold", "HYqihei 75S", sans-serif;
-	/* --font-serif: "Bembo std", "思源宋体", serif; */
-	--font-body: "segoe UI", "HYqihei 55S", sans-serif;
-	--font-bold: "segoeuibold", "HYqihei 85S", sans-serif;
-	--font-thinnest: "segoeuil", "HYqihei 40S",sans-serif;
-	/* --font-italic: "segoeuiitalic", "HYZhongsongs", sans-serif; */
-	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "HYqihei 65S", monospace;;
+	--colour-identity: rgb(14, 126, 73);
+	--colour-iden-second:rgb(89, 192, 144);
+	--colour-iden-third:rgb(170, 224, 199);
 	--colour-code-background:#2c3e50;
 	--colour-mathblock-background:rgb(38, 87, 88);
 	--colour-footnote-num:rgb(65, 71, 82);
@@ -19,6 +12,17 @@
 	--colour-content-sec-sec:rgb(200,200,200);
 	--colour-quote: rgb(112, 136, 172);
 	--colour-quote-mark:#5c5c5c;
+
+	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
+	/* --font-heaviest: "Segoe UI Black", "HYqihei 105", sans-serif; */
+	--font-second: "segoeuisemibold", "HYqihei 75S", sans-serif;
+	/* --font-serif: "Bembo std", "思源宋体", serif; */
+	--font-body: "Segoe UI", "HYqihei 55S", sans-serif;
+	--font-bold: "segoeuibold", "HYqihei 85S", sans-serif;
+	--font-thinnest: "segoeuil", "HYqihei 40S",sans-serif;
+	/* --font-italic: "segoeuiitalic", "HYZhongsongs", sans-serif; */
+	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "HYqihei 65S", monospace;;
+
 }
 
 /*定义全局色彩和字体变量*/
@@ -101,40 +105,44 @@ h1 {
 	font-size: 2.5rem;
 	line-height: 3rem;
 	margin: 8rem auto 1.67rem;
-	padding: 0.25em 0.25em;
-	text-align: left;
+	padding: 0.25em 0em;
+	text-align: center;
 	width: fit-content !important;
-	border-top: 0.2em solid var(--colour-identity);
+	max-width: 35rem;
+	border-bottom: 0.25em solid var(--colour-body);
+	border-top: 0.25em solid var(--colour-body);
+	
 }
 
 h2 {
 	font-family: var(--font-heaviest);
 	color: var(--colour-body);
 	font-weight: normal;
-	font-size: 1.75rem;
+	font-size: 2rem;
 	line-height: 2.5rem;
 	/* margin: 0 0 2rem; */
-	padding: 0 0.5em 0.1em 0.5em;
+	padding: 0.1em 0em;
 	text-align: center;
 	margin: 5rem auto 1.67rem;
 	width: fit-content !important;
-	max-width: 35rem;
-	border-radius: 0.5em;
-	background-color: var(--colour-iden-third);
+	max-width: 30rem;
+	/* border-radius: 0.5em; */
+	/* background-color: var(--colour-iden-third); */
+	border-bottom: 0.15em solid var(--colour-body);
 }
 
 h3 {
 	font-family: var(--font-second);
 	color: var(--colour-body);
 	font-weight: normal;
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	line-height: 2rem;
-	text-align: left;
-	/* padding: 0 2em; */
-	margin-top: 3rem;
-	margin-bottom: 1.67rem;
-	border-left: 24px solid var(--colour-identity);
-	padding-left: 12px;
+	text-align: center;
+	padding: 0 0.5em;
+	margin: 3rem auto 1.67rem;
+	/* border-left: 24px solid var(--colour-identity); */
+	/* padding-left: 12px; */
+	width: fit-content !important;
 }
 
 h4 {
@@ -142,25 +150,25 @@ h4 {
 	color: var(--colour-body);
 	/* padding-top: 1.25rem; */
 	font-weight: normal;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	text-align: left;
 	/* padding: 0 2em 0 0; */
 	margin-top: 3rem;
 	margin-bottom: 1rem;
-	border-left: 6px solid var(--colour-identity);
+	border-left: 5px solid var(--colour-identity);
 	padding-left: 12px;
 }
 
 h5 {
 	font-family: var(--font-second);
 	color: var(--colour-body);
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-weight: normal;
 	text-align: left;
 	/* padding: 0 2em 0 0; */
 	margin-top: 2rem;
 	margin-bottom: 0.67rem;
-	border-left: 3px solid ;
+	border-left: 2px solid ;
 	border-left-color: var(--colour-iden-second);
 	padding-left: 6px;
 }
@@ -198,7 +206,7 @@ p strong{
 
 /* 超链接 */
 a, .md-def-url {
-	color: #0730b4;
+	color: #073da1;
 	text-decoration: none;
 }
 a:hover {
@@ -237,7 +245,7 @@ ul li p {
 
 }
 .ul-list{
-	color: rgb(127, 127, 127);
+	color: var(--colour-grey-2);
 	padding-left: 3rem !important;
 	padding-right: 2rem; 
 }
@@ -264,7 +272,7 @@ ol li p {
 	text-align: left;
 }
 .ol-list{
-	color: rgb(127, 127, 127);
+	color: var(--colour-grey-2);
 	padding-left: 3rem;
 	padding-right: 2rem;
 }
@@ -274,13 +282,13 @@ blockquote {
 	margin: 1rem 1rem 1rem 1rem;
 	padding: 0.5rem 1rem;
 	/* border-left: 0.2rem solid #ccc; */
-	/* border-radius: 10px;
-	background-color: rgb(250, 249, 241); */
+	/* border-radius: 10px; */
+	/* background-color: rgb(250, 249, 241); */
 }
 
 blockquote, blockquote p {
 	line-height: 30px;
-	color: var(--colour-quote);
+	color: var(--colour-identity);
 }
 blockquote li p {
 	color:var(--colour-quote);
@@ -336,7 +344,7 @@ blockquote::after {
 .md-comment {
 	font-family: var(--font-body);
 	font-size: 1rem;
-	color: rgb(247, 172, 102);
+	color: rgb(228, 96, 79);
 }
 
 /* 代码字体 */
@@ -804,8 +812,8 @@ table tbody+tbody {
 
 /* 脚注 */
 .md-footnote{
-	background-color: rgb(201, 219, 247) !important;
-	color: rgb(0, 0, 0) !important;
+	background-color: var(--colour-iden-third) !important;
+	color: var(--colour-body) !important;
 	/* border: 1px solid rgb(121, 121, 121); */
 	padding: 0px 3px 1px 3px !important;
 	text-align: left;
@@ -813,18 +821,19 @@ table tbody+tbody {
 }
 .md-def-name{
 	padding: 0 1rem;
-	color: var(--colour-footnote-num);
+	color: var(--colour-grey-1);
 	font-family: var(--font-bold);
 	font-size: 0.9rem;
 	font-weight: normal;
+	background-color: var(--colour-iden-third);
 }
 .md-def-name::before{
 	content: '【' !important;
-	color: var(--colour-footnote-num);
+	color: var(--colour-grey-1);
 }
 .md-def-name::after{
 	content: '】' !important;
-	color: var(--colour-footnote-num);
+	color: var(--colour-grey-1);
 }
 .md-def-split{
 	min-width: 0.5rem;
@@ -832,7 +841,7 @@ table tbody+tbody {
 .md-def-content{
 	font-family: var(--font-body);
 	font-size: 0.9rem;
-	color: rgb(41, 41, 41);
+	color: var(--colour-grey-1);
 }
 
 /* 链接引用 */
@@ -898,8 +907,8 @@ table tbody+tbody {
 }
 
 .md-toc-h1 .md-toc-inner{
-	padding: 0.1em 0.2em 0 0.2em;
-	border-top: 0.2em solid var(--colour-identity);
+	/* padding: 0.1em 0.2em 0 0.2em;
+	border-top: 0.2em solid var(--colour-identity); */
 }
 /* • ‣ ⁍ ⏹ ⏺ ● */
 
@@ -907,35 +916,35 @@ table tbody+tbody {
 	font-family: var(--font-second);
 	font-size:1rem;
 	font-weight: normal;
-	margin-top: 0.75rem;
+	margin-top: 0.5rem;
 }
 .md-toc-h2 .md-toc-inner{
 	/* border-left:0.75em solid var(--colour-content-sec-sec); 
 	border-right:0.75em solid var(--colour-content-sec-sec);  */
-	padding:0 0.5em;
+	/* padding:0 0.5em;
 	border-radius: 0.5em;
-	background-color: var(--colour-content-second);
+	background-color: var(--colour-content-second); */
 }
 
 .md-toc-h3{
 	font-family: var(--font-body);
 	font-size:1rem;
 	font-weight: normal;
-	margin-top: 0.5rem;
+	margin-top: 0.25rem;
 }
 .md-toc-h3 .md-toc-inner{
-	padding-left:0.5em;
-	border-left: 13px solid var(--colour-content-second); 
+	/* padding-left:0.5em;
+	border-left: 13px solid var(--colour-content-second);  */
 }
 
 .md-toc-h4{
 	font-family: var(--font-body);
 	font-size:1rem;
 	font-weight: normal;
-	margin-top: 0.25rem;
+	margin-top: 0.15rem;
 }
 .md-toc-h4 .md-toc-inner{
-	padding-left:1em;
+	/* padding-left:1em; */
 	/* border-left: 4px solid var(--colour-content-second);  */
 }
 
@@ -946,7 +955,7 @@ table tbody+tbody {
 	margin-top: 0.1rem; 
 }
 .md-toc-h5 .md-toc-inner{
-	padding-left:1.5em;
+	/* padding-left:1.5em; */
 }
 
 .md-toc-h6{
@@ -956,7 +965,7 @@ table tbody+tbody {
 	margin-top: 0rem;
 }
 .md-toc-h6 .md-toc-inner{
-	padding-left:3.25em;
+	/* padding-left:3.25em; */
 }
 
 /* 右键菜单 */

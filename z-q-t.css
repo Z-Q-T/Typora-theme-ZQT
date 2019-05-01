@@ -30,7 +30,9 @@
 	/* --font-italic: "segoeuiitalic", "HYZhongsongs", sans-serif; */
 	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "HYqihei 65S", monospace;;
 	--size-p:18px;
-	--size-h4:calc(calc(5/3)*var(--size-p));
+	--size-h2:calc(2*var(--size-p));
+	--size-h3:calc(1.75*var(--size-p));
+	--size-h4:calc(1.5*var(--size-p));
 	--size-h5:calc(1.25*var(--size-p));
 }
 
@@ -128,7 +130,7 @@ h2 {
 	font-family: var(--font-heaviest);
 	color: var(--colour-body);
 	font-weight: normal;
-	font-size: 2rem;
+	font-size: var(--size-h2);
 	line-height: 2.5rem;
 	padding: 0em 0.5em 0.1em;
 	text-align: center;
@@ -142,7 +144,7 @@ h3 {
 	font-family: var(--font-second);
 	color: var(--colour-body);
 	font-weight: normal;
-	font-size: 1.75rem;
+	font-size: var(--size-h3);
 	line-height: 1em;
 	text-align: center;
 	padding: 0em 0em 0.15em;
@@ -164,7 +166,8 @@ h4 {
 	margin-left: 0;
 	width: fit-content !important;
 	border-bottom: 2.5px solid var(--colour-body);
-	padding: 0em 0em 0.15em 0em;
+	border-right: 2px solid var(--colour-body);
+	padding: 0em 0.25em 0.15em 0em;
 }
 
 h5 {

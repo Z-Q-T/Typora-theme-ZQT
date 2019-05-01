@@ -1,17 +1,19 @@
 :root {
-	--colour-paper:rgb(255, 255, 255);
-	--colour-grey-1: rgb(55,55,55);
-	--colour-grey-2:rgb(111,111,111);
+	--colour-body: rgb(0, 0, 0);
+	--colour-grey-1: rgb(51,51,51);
+	--colour-grey-2:rgb(102,102,102);
 	--colour-grey-3:rgb(153, 153, 153);
-	--colour-grey-4:rgb(240, 240, 240);
-
-	--colour-body: rgb(22, 22, 22);
+	--colour-grey-4:rgb(204, 204, 204);
+	--colour-grey-5:rgb(221,221,221);
+	--colour-grey-6:rgb(238,238,238);
+	--colour-paper:rgb(255, 255, 255);
+	
 	--colour-identity: rgb(14, 126, 73);
 	--colour-iden-second:rgb(224, 247, 236);
 	--colour-iden-third:rgb(178, 226, 204);
 
-	--colour-code-background:#2c2c2c;
-	--colour-mathblock-background:rgb(38, 88, 73);
+	--colour-code-background:rgb(34, 37, 37);
+	--colour-mathblock-background:rgb(42, 82, 70);
 	/* --colour-footnote-num:rgb(65, 71, 82); */
 	/* --colour-quote: rgb(112, 136, 172); */
 	/* --colour-quote-mark:#5c5c5c; */
@@ -380,9 +382,9 @@ code, pre, samp, tt {
 /* 段落内代码 */
 
 code {
-	background: var(--colour-grey-4);
-	color: var(--colour-code-background);
-	border: 1px solid rgb(188, 188, 188);
+	background: var(--colour-code-background);
+	color: var(--colour-grey-4);
+	border: 0px solid rgb(188, 188, 188);
 	border-radius: 5px;
 	padding: .1em 0.33rem;
 	font-size: 0.9em;
@@ -766,26 +768,36 @@ hr{
 /* 表格 */
 .md-table-fig{
 	margin: 1.25rem 0;
+	border-radius: 10px !important;
+	/* border: 1.5px solid var(--colour-grey-2) !important; */
+	background-color: var(--colour-grey-6);
 }
 table tr th {
 	font-family: var(--font-bold);
 	font-weight: normal;
-	border-bottom: 2px solid #000000;
-	/* border-top: 2px solid #000000; */
+	border-bottom: 1px solid var(--colour-grey-2);
+	background-color: var(--colour-grey-5);
+	/* border-top: 2px solid var(--colour-grey-2); */
 }
 .td-span {
 	min-width: 2rem;
 }
 
 table {
-	margin-bottom: 20px
+	margin-bottom: 20px;
+		
+	/* overflow:hidden;  */
+	/* border-top-left-radius:1em;
+	border-top-right-radius:1em;
+	border-bottom-right-radius:1em;
+	border-bottom-left-radius:1em; */
 }
 
 table th, table td {
 	padding: 8px 0.5rem;
 	line-height: 1.25rem;
 	vertical-align: top;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid var(--colour-grey-4);
 	text-align: left;
 }
 table th{
@@ -799,11 +811,11 @@ table thead th {
 	vertical-align: bottom
 }
 
-table caption+thead tr:first-child th, table caption+thead tr:first-child td, table colgroup+thead tr:first-child th, table colgroup+thead tr:first-child td, 
+/* table caption+thead tr:first-child th, table caption+thead tr:first-child td, table colgroup+thead tr:first-child th, table colgroup+thead tr:first-child td, 
 table thead:first-child tr:first-child th,
  table thead:first-child tr:first-child td {
 	border-top: 0
-}
+} */
 
 table tbody+tbody {
 	border-top: 2px solid #ddd

@@ -1,18 +1,21 @@
 :root {
 	--colour-grey-1: rgb(55,55,55);
 	--colour-grey-2:rgb(111,111,111);
+	--colour-grey-3:rgb(153, 153, 153);
+	--colour-grey-4:rgb(240, 240, 240);
+
 	--colour-body: rgb(22, 22, 22);
 	--colour-identity: rgb(14, 126, 73);
-	--colour-iden-second:rgb(89, 192, 144);
-	--colour-iden-third:rgb(170, 224, 199);
-	--colour-code-background:#2c3e50;
-	--colour-mathblock-background:rgb(38, 87, 88);
-	--colour-footnote-num:rgb(65, 71, 82);
-	--colour-content-second:rgb(222,222,222);
-	--colour-content-sec-sec:rgb(200,200,200);
+	--colour-iden-second:rgb(224, 247, 236);
+	--colour-iden-third:rgb(178, 226, 204);
+
+	--colour-code-background:#2c2c2c;
+	--colour-mathblock-background:rgb(38, 88, 73);
+	/* --colour-footnote-num:rgb(65, 71, 82); */
 	--colour-quote: rgb(112, 136, 172);
-	--colour-quote-mark:#5c5c5c;
+	/* --colour-quote-mark:#5c5c5c; */
 	--colour-hyperlink:rgb(4, 62, 170);
+	--colour-comment:rgb(236, 62, 91);
 
 	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
 	/* --font-heaviest: "Segoe UI Black", "HYqihei 105", sans-serif; */
@@ -122,7 +125,7 @@ h2 {
 	font-size: 2rem;
 	line-height: 2.5rem;
 	/* margin: 0 0 2rem; */
-	padding: 0.1em 0em;
+	padding: 0em 0.5em 0.1em;
 	text-align: center;
 	margin: 5rem auto 1.67rem;
 	width: fit-content !important;
@@ -137,13 +140,14 @@ h3 {
 	color: var(--colour-body);
 	font-weight: normal;
 	font-size: 1.75rem;
-	line-height: 2rem;
+	line-height: 1em;
 	text-align: center;
-	padding: 0 0.5em;
-	margin: 3rem auto 1.67rem;
+	padding: 0em 0em 0.15em;
+	margin: 4rem auto 1.67rem;
 	/* border-left: 24px solid var(--colour-identity); */
 	/* padding-left: 12px; */
 	width: fit-content !important;
+	border-bottom: 0.1em solid var(--colour-body);
 }
 
 h4 {
@@ -152,12 +156,16 @@ h4 {
 	/* padding-top: 1.25rem; */
 	font-weight: normal;
 	font-size: 1.5rem;
+	line-height: 1em;
 	text-align: left;
 	/* padding: 0 2em 0 0; */
 	margin-top: 3rem;
 	margin-bottom: 1rem;
-	border-left: 5px solid var(--colour-identity);
-	padding-left: 12px;
+	margin-left: 0;
+	width: fit-content !important;
+	border-bottom: 2.5px solid var(--colour-body);
+	/* border-top: 2px solid var(--colour-body); */
+	padding: 0em 0em 0.15em 0em;
 }
 
 h5 {
@@ -165,13 +173,15 @@ h5 {
 	color: var(--colour-body);
 	font-size: 1.25rem;
 	font-weight: normal;
+	line-height: 1em;
 	text-align: left;
 	/* padding: 0 2em 0 0; */
 	margin-top: 2rem;
 	margin-bottom: 0.67rem;
-	border-left: 2px solid ;
-	border-left-color: var(--colour-iden-second);
-	padding-left: 6px;
+	margin-left: 0;
+	width: fit-content !important;
+	border-bottom: 2px solid var(--colour-body);
+	padding:0 0 0.15em;
 }
 
 h6 {
@@ -179,11 +189,15 @@ h6 {
 	color: var(--colour-body);
 	font-size: 1rem;
 	font-weight: normal;
+	line-height: 1em;
 	text-align: left;
 	/* text-decoration: underline; */
-	/* padding: 0 5em 0 0; */
+	padding: 0 0 0.15em;
 	margin-top: 1.5rem;
-	margin-bottom: 0.33rem;
+	margin-bottom: 0.15rem;
+	margin-left: 0;
+	width: fit-content !important;
+	border-bottom: 1.5px solid var(--colour-body);
 }
 
 p {
@@ -280,63 +294,68 @@ ol li p {
 
 /* 引用 */
 blockquote {
-	margin: 1rem 1rem 1rem 1rem;
+	margin: 1rem 1rem;
 	padding: 0.5rem 1rem;
 	/* border-left: 0.2rem solid #ccc; */
 	/* border-radius: 10px; */
-	/* background-color: rgb(250, 249, 241); */
+	background-color: var(--colour-iden-second);
 }
 
 blockquote, blockquote p {
 	line-height: 30px;
-	color: var(--colour-identity);
+	color: var(--colour-body);
 }
 blockquote li p {
-	color:var(--colour-quote);
+	color:var(--colour-body);
 }
-
+blockquote .ul-list{
+	color: var(--colour-grey-2);
+	padding-left: 3rem !important;
+	padding-right: 2rem; 
+}
+blockquote .ol-list{
+	color: var(--colour-grey-2);
+	padding-left: 3rem;
+	padding-right: 2rem;
+}
 blockquote:before {
-	/* content: '“'; */
 	content: open-quote;
 	font-family: "source han sans", "bembo","Adobe Garamond Pro","Times New Roman","Georgia",serif;
     font-size: 2rem;
-    text-align: center;
-    /* line-height: 1.5rem; */
-    color: var(--colour-quote-mark);
-    /* background: #ddd; */
-    float: left;
+    /* text-align: center; */
+    color: var(--colour-body);
+	float: left;
     position: absolute;
-    /* border-radius: 1rem; */
-    /* margin-right: 0.5em; */
-    left: 2.5rem;
-    /* vertical-align: -0.4em; */
-    /* display: block; */
-    /* height: 1rem; */
-    /* width: 1rem; */
-    /* background-color: #555; */
+	left: 3rem;
+	/* top:-0.1rem; */
     font-style: normal;
-    transition: all 350ms;
+    /* transition: all 350ms;
     -o-transition: all 350ms;
     -moz-transition: all 350ms;
-    -webkit-transition: all 350ms;
+	-webkit-transition: all 350ms; */
+	/* line-height: 2rem; */
+    /* border-radius: 1em; */
+    /* margin-right: 0.5em; */
+	display: block;
+	/* vertical-align: -1em; */
+    /* height: 1.5rem; */
+    /* width: 1.5rem; */
+	/* background-color: var(--colour-iden-second); */
 }
 blockquote::after {
 	content: close-quote;
 	font-family: "source han sans", "bembo","Adobe Garamond Pro","Times New Roman","Georgia",serif;
     font-size: 2rem;
-    /* text-align: center; */
-    /* line-height: 1.5rem; */
-    color: var(--colour-quote-mark);
+    color: var(--colour-body);
     float: right;
     position: absolute;
-    /* border-radius: 1rem; */
-	right: 2.5rem;
+    right: 3rem;
 	margin-top: -15px;
 	font-style: normal;
-	transition: all 350ms;
+	/* transition: all 350ms;
     -o-transition: all 350ms;
     -moz-transition: all 350ms;
-    -webkit-transition: all 350ms;
+	-webkit-transition: all 350ms; */
 }
 
 
@@ -345,7 +364,7 @@ blockquote::after {
 .md-comment {
 	font-family: var(--font-body);
 	font-size: 1rem;
-	color: rgb(228, 96, 79);
+	color: var(--colour-comment);
 }
 
 /* 代码字体 */
@@ -358,7 +377,7 @@ code, pre, samp, tt {
 /* 段落内代码 */
 
 code {
-	background: rgb(233, 233, 233);
+	background: var(--colour-grey-4);
 	color: var(--colour-code-background);
 	border: 1px solid rgb(188, 188, 188);
 	border-radius: 5px;
@@ -368,22 +387,24 @@ code {
 	margin-right: 0.33em;
 }
 blockquote code{
-	color: var(--colour-quote);
+	color: var(--colour-grey-3);
 }
+
+
 /* 单独代码段 */
 .md-fences {
 	background: var(--colour-code-background)!important;
 	border: 0px solid #ddd;
-	border-radius: 10px;
-	margin: 1.67rem 1rem 1.67rem 1rem;
+	border-radius: 5px;
+	margin: 2rem 1rem;
 	font-size: 75%;
 	padding: 1em 1em;
 	/* margin-left: 1em;
 	margin-right: 1em; */
 }
-blockquote .md-fences {
-	border: 2px solid var(--colour-quote);
-}
+/* blockquote .md-fences {
+	border: 2px solid var(--colour-grey-3);
+} */
 /**apply to code fences with plan text**/
 .md-fences {
 	color: rgba(233, 237, 237, 1);
@@ -459,7 +480,7 @@ blockquote .md-fences {
 }
 
 .cm-s-inner .cm-atom {
-	color: rgb(128, 221, 143);
+	color: rgb(182, 247, 129);
 }
 
 .cm-s-inner .cm-attribute {
@@ -470,7 +491,7 @@ blockquote .md-fences {
 	color: rgb(107, 201, 255);
 }
 .cm-s-inner .cm-comment {
-	color: rgb(124, 143, 156);
+	color: rgb(127, 127, 127);
 }
 
 .cm-s-inner .cm-def {
@@ -497,7 +518,7 @@ blockquote .md-fences {
 	color: rgba(233, 237, 237, 1);
 }
 .cm-s-inner .cm-property {
-	color: rgb(85, 231, 224);
+	color: rgb(85, 231, 175);
 }
 
 .cm-s-inner .cm-qualifier {
@@ -517,7 +538,7 @@ blockquote .md-fences {
 }
 
 .cm-s-inner .cm-variable {
-	color: rgb(231, 73, 73);
+	color: rgb(255, 170, 170);
 }
 
 .cm-s-inner .cm-variable-2 {
@@ -849,7 +870,7 @@ table tbody+tbody {
 	/* max-width: 0.5rem; */
 }
 .md-def-split::before{
-	content: ' :' !important;
+	content: '' !important;
 	font-family: var(--font-bold);
 	color: var(--colour-grey-1);
 }

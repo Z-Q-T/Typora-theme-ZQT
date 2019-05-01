@@ -8,16 +8,18 @@
 	--colour-grey-6:rgb(238,238,238);
 	--colour-paper:rgb(255, 255, 255);
 	
-	--colour-identity: rgb(8, 139, 78);
-	--colour-iden-second:rgb(224, 247, 236);
-	--colour-iden-third:rgb(178, 226, 204);
+	--colour-iden-1:hsl(157, 91%, 31%);
+	--colour-iden-2:hsl(157, 61%, 45%);
+	--colour-iden-3:hsl(157, 62%, 75%);
+	--colour-iden-4:hsl(157, 54%, 84%);
+	--colour-iden-5:hsl(157, 66%, 94%);
 
-	--colour-code-background:rgb(34, 37, 37);
+	--colour-code-background:rgb(50, 55, 55);
 	--colour-mathblock-background:rgb(42, 82, 70);
 	/* --colour-footnote-num:rgb(65, 71, 82); */
 	/* --colour-quote: rgb(112, 136, 172); */
 	/* --colour-quote-mark:#5c5c5c; */
-	--colour-hyperlink:var(--colour-identity);
+	--colour-hyperlink:var(--colour-iden-1);
 	--colour-comment:rgb(245, 43, 77);
 
 	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
@@ -121,8 +123,9 @@ h1 {
 	text-align: center;
 	width: fit-content !important;
 	max-width: 35rem;
-	border-bottom: 0.25em solid var(--colour-body);
-	border-top: 0.25em solid var(--colour-body);
+	border-bottom: 0.2em solid var(--colour-iden-1);
+	border-top: 0.2em solid var(--colour-iden-1);
+	background-color: var(--colour-iden-3)
 	
 }
 
@@ -137,7 +140,10 @@ h2 {
 	margin: 10rem auto 1.67rem;
 	width: fit-content !important;
 	max-width: 30rem;
-	border-bottom: 0.15em solid var(--colour-body);
+	border-bottom: 0.15em solid var(--colour-iden-1);
+	border-left: 0.15em solid var(--colour-iden-1);
+	border-right: 0.15em solid var(--colour-iden-1);
+	background-color: var(--colour-iden-3)
 }
 
 h3 {
@@ -147,10 +153,12 @@ h3 {
 	font-size: var(--size-h3);
 	line-height: 1em;
 	text-align: center;
-	padding: 0em 0em 0.15em;
+	padding: 0.25em 0.25em 0.3em;
 	margin: 5rem auto 1.67rem;
 	width: fit-content !important;
-	border-bottom: 0.1em solid var(--colour-body);
+	border-bottom: 0.1em solid var(--colour-iden-2);
+	/* border-right: 0.1em solid var(--colour-iden-2); */
+	background-color: var(--colour-iden-4)
 }
 
 
@@ -165,9 +173,10 @@ h4 {
 	margin-bottom: 1rem;
 	margin-left: 0;
 	width: fit-content !important;
-	border-bottom: 2.5px solid var(--colour-body);
-	border-right: 2px solid var(--colour-body);
-	padding: 0em 0.25em 0.15em 0em;
+	border-left: 4px solid var(--colour-iden-2);
+	/* border-right: 2px solid var(--colour-iden-3); */
+	padding: 0.15em 0.25em;
+	background-color: var(--colour-iden-4)
 }
 
 h5 {
@@ -177,13 +186,13 @@ h5 {
 	font-weight: normal;
 	line-height: 1em;
 	text-align: left;
-	/* padding: 0 2em 0 0; */
 	margin-top: 2rem;
 	margin-bottom: 0.67rem;
 	margin-left: 0;
 	width: fit-content !important;
-	border-bottom: 2px solid var(--colour-body);
-	padding:0 0 0.15em;
+	border-left: 3px solid var(--colour-iden-2);
+	padding:0.15em 0.25em;
+	background-color: var(--colour-iden-5);
 }
 
 h6 {
@@ -194,12 +203,12 @@ h6 {
 	line-height: 1em;
 	text-align: left;
 	/* text-decoration: underline; */
-	padding: 0 0 0.15em;
+	padding: 0 0.2em 0.1em;
 	margin-top: 1.5rem;
-	margin-bottom: 0.15rem;
+	margin-bottom: 0.4rem;
 	margin-left: 0;
 	width: fit-content !important;
-	border-bottom: 1.5px solid var(--colour-body);
+	border-left: 2px solid var(--colour-iden-2);
 }
 
 p {
@@ -303,7 +312,7 @@ blockquote {
 	padding: 20pt;
 	/* border-left: 0.2rem solid #ccc; */
 	border-radius: 10px;
-	background-color: var(--colour-iden-second);
+	background-color: var(--colour-grey-6);
 	overflow: visible;
 	font-size: 0.9rem;
 }
@@ -333,7 +342,7 @@ blockquote:before {
 	font-family: "source han sans", "bembo","Adobe Garamond Pro","Times New Roman","Georgia",serif;
     font-size: 2rem;
     /* text-align: center; */
-    color: var(--colour-identity);
+    color: var(--colour-grey-1);
 	float: none;
     position: absolute;
 	left: 2em;
@@ -349,13 +358,13 @@ blockquote:before {
 	/* vertical-align: 1rem; */
     /* height: 0rem;
     width: 1.5rem; */
-	/* background-color: var(--colour-iden-second); */
+	/* background-color: var(--colour-iden-5); */
 }
 /* blockquote::after {
 	content: close-quote;
 	font-family: "source han sans", "bembo","Adobe Garamond Pro","Times New Roman","Georgia",serif;
     font-size: 1.5rem;
-    color: var(--colour-identity);
+    color: var(--colour-iden-1);
     float: none;
     position: absolute;
     right: 2.75rem;
@@ -686,7 +695,7 @@ blockquote code{
 }
 
 .md-task-list-item>input:checked:before, .md-task-list-item>input[checked]:before {
-	background: var(--colour-identity);
+	background: var(--colour-iden-1);
 	border-width:0px;
 	display: inline-block;
 	transition: background-color 200ms ease-in-out;
@@ -718,7 +727,7 @@ blockquote code{
 /* 以上内容摘自Typora自带主题pixyll，略有修改，可能受版权保护 */
 
 input{
-	color: var(--colour-identity);
+	color: var(--colour-iden-1);
 }
 .task-list {
 	padding-left: 0;
@@ -885,7 +894,7 @@ table tbody+tbody {
 
 .md-footnote{
 	/* 这是文间标注 */
-	background-color: var(--colour-iden-third) !important;
+	background-color: var(--colour-iden-4) !important;
 	color: var(--colour-body) !important;
 	/* border: 1px solid rgb(121, 121, 121); */
 	padding: 0px 3px 1px 3px !important;
@@ -900,7 +909,7 @@ table tbody+tbody {
 	font-size: 0.9rem;
 	font-weight: normal;
 	border-radius: 4px;
-	background-color: var(--colour-iden-third);
+	background-color: var(--colour-iden-4);
 }
 .md-def-name::before{
 	content: '' !important;
@@ -996,7 +1005,7 @@ table tbody+tbody {
 	text-align: left;
 }
 .md-toc-content a{
-	color: var(--colour-identity);
+	color: var(--colour-iden-1);
 }
 
 .md-toc-item{
@@ -1022,7 +1031,7 @@ table tbody+tbody {
 
 .md-toc-h1 .md-toc-inner{
 	/* padding: 0.1em 0.2em 0 0.2em;
-	border-top: 0.2em solid var(--colour-identity); */
+	border-top: 0.2em solid var(--colour-iden-1); */
 }
 /* • ‣ ⁍ ⏹ ⏺ ● */
 

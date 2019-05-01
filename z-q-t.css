@@ -307,10 +307,11 @@ blockquote {
 	border-radius: 10px;
 	background-color: var(--colour-iden-second);
 	overflow: visible;
+	font-size: 0.9rem;
 }
 
-blockquote, blockquote p {
-	font-size: 16px;
+blockquote p {
+	font-size: inherit;
 	text-indent: 2em;
 	line-height: 24px !important;
 	color: var(--colour-body);
@@ -337,7 +338,7 @@ blockquote:before {
     color: var(--colour-identity);
 	float: none;
     position: absolute;
-	left: 1.25em;
+	left: 2em;
     font-style: normal;
     /* transition: all 350ms;
     -o-transition: all 350ms;
@@ -420,23 +421,11 @@ blockquote code{
 .CodeMirror-sizer{
 	margin-left: 30px !important;
 }
-/* blockquote .CodeMirror-gutters{
-	left:0px !important;
-	width: 20px !important;
-}
-blockquote .CodeMirror-gutter{
-	left:0px !important;
-	width: 20px !important;
-}
-blockquote .CodeMirror-linenumbers {
-	left: -30px !important;
-}
-blockquote .CodeMirror-linenumber {
-	left: -30px !important;
-} */
 
 .md-fences .code-tooltip {
 	background-color: var(--colour-code-background);
+	border-radius: 10px;
+	text-indent: 0 !important;
 }
 
 /* 代码行数和代码的分割线 */

@@ -1,4 +1,5 @@
 :root {
+	--colour-paper:rgb(255, 255, 255);
 	--colour-grey-1: rgb(55,55,55);
 	--colour-grey-2:rgb(111,111,111);
 	--colour-grey-3:rgb(153, 153, 153);
@@ -12,7 +13,7 @@
 	--colour-code-background:#2c2c2c;
 	--colour-mathblock-background:rgb(38, 88, 73);
 	/* --colour-footnote-num:rgb(65, 71, 82); */
-	--colour-quote: rgb(112, 136, 172);
+	/* --colour-quote: rgb(112, 136, 172); */
 	/* --colour-quote-mark:#5c5c5c; */
 	--colour-hyperlink:rgb(4, 62, 170);
 	--colour-comment:rgb(236, 62, 91);
@@ -65,7 +66,7 @@
 /* 包含#write的部分只会对书写区域的内容产生影响，而不会影响到菜单、对话框等界面 */
 
 html, body, #write {
-	/* background: #fcfcfc; */
+	background: var(--colour-paper);
 	font-family: var(--font-body);
 	
 }
@@ -297,8 +298,9 @@ blockquote {
 	margin: 1rem 1rem;
 	padding: 0.5rem 1rem;
 	/* border-left: 0.2rem solid #ccc; */
-	/* border-radius: 10px; */
+	border-radius: 10px;
 	background-color: var(--colour-iden-second);
+	overflow: visible;
 }
 
 blockquote, blockquote p {
@@ -321,37 +323,38 @@ blockquote .ol-list{
 blockquote:before {
 	content: open-quote;
 	font-family: "source han sans", "bembo","Adobe Garamond Pro","Times New Roman","Georgia",serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     /* text-align: center; */
-    color: var(--colour-body);
-	float: left;
+    color: var(--colour-identity);
+	float: none;
     position: absolute;
-	left: 3rem;
-	/* top:-0.1rem; */
+	left: 2.75rem;
     font-style: normal;
     /* transition: all 350ms;
     -o-transition: all 350ms;
     -moz-transition: all 350ms;
 	-webkit-transition: all 350ms; */
-	/* line-height: 2rem; */
+	line-height: 0.75rem;
     /* border-radius: 1em; */
     /* margin-right: 0.5em; */
-	display: block;
-	/* vertical-align: -1em; */
-    /* height: 1.5rem; */
-    /* width: 1.5rem; */
+	display: inline;
+	/* vertical-align: 1rem; */
+    /* height: 0rem;
+    width: 1.5rem; */
 	/* background-color: var(--colour-iden-second); */
 }
 blockquote::after {
 	content: close-quote;
 	font-family: "source han sans", "bembo","Adobe Garamond Pro","Times New Roman","Georgia",serif;
-    font-size: 2rem;
-    color: var(--colour-body);
-    float: right;
+    font-size: 1.5rem;
+    color: var(--colour-identity);
+    float: none;
     position: absolute;
-    right: 3rem;
-	margin-top: -15px;
+    right: 2.75rem;
+	/* margin-top: -15px; */
 	font-style: normal;
+	line-height: 0.5rem;
+	display: inline;
 	/* transition: all 350ms;
     -o-transition: all 350ms;
     -moz-transition: all 350ms;

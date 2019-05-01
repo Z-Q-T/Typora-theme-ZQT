@@ -18,7 +18,7 @@
 	/* --colour-quote: rgb(112, 136, 172); */
 	/* --colour-quote-mark:#5c5c5c; */
 	--colour-hyperlink:var(--colour-identity);
-	--colour-comment:rgb(236, 62, 91);
+	--colour-comment:rgb(245, 43, 77);
 
 	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
 	/* --font-heaviest: "Segoe UI Black", "HYqihei 105", sans-serif; */
@@ -75,6 +75,7 @@ html, body, #write {
 
 html {
 	font-size: 18px;
+	/* hyphens: auto; */
 	/*标准字体大小，此后所有rem单位均以此为准*/
 }
 
@@ -226,6 +227,9 @@ p strong{
 a, .md-def-url {
 	color: var(--colour-hyperlink);
 	text-decoration: none;
+	white-space: pre-wrap;
+	word-wrap:break-word !important;
+	word-break:break-all !important;
 }
 a:hover {
 	text-decoration: underline;
@@ -297,8 +301,8 @@ ol li p {
 
 /* 引用 */
 blockquote {
-	margin: 1rem 1rem;
-	padding: 0.5rem 1rem;
+	margin: 1rem 2rem;
+	padding: 20pt;
 	/* border-left: 0.2rem solid #ccc; */
 	border-radius: 10px;
 	background-color: var(--colour-iden-second);
@@ -307,6 +311,7 @@ blockquote {
 
 blockquote, blockquote p {
 	font-size: 16px;
+	text-indent: 2em;
 	line-height: 24px !important;
 	color: var(--colour-body);
 }
@@ -316,29 +321,29 @@ blockquote li p {
 }
 blockquote .ul-list{
 	color: var(--colour-grey-2);
-	padding-left: 3rem !important;
-	padding-right: 2rem; 
+	padding-left: 3em !important;
+	padding-right: 2em; 
 }
 blockquote .ol-list{
 	color: var(--colour-grey-2);
-	padding-left: 3rem;
-	padding-right: 2rem;
+	padding-left: 3em;
+	padding-right: 2em;
 }
 blockquote:before {
-	content: open-quote;
+	content: '“';
 	font-family: "source han sans", "bembo","Adobe Garamond Pro","Times New Roman","Georgia",serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     /* text-align: center; */
     color: var(--colour-identity);
 	float: none;
     position: absolute;
-	left: 2.75rem;
+	left: 1.25em;
     font-style: normal;
     /* transition: all 350ms;
     -o-transition: all 350ms;
     -moz-transition: all 350ms;
 	-webkit-transition: all 350ms; */
-	line-height: 0.75rem;
+	line-height: 0rem;
     /* border-radius: 1em; */
     /* margin-right: 0.5em; */
 	display: inline;
@@ -347,7 +352,7 @@ blockquote:before {
     width: 1.5rem; */
 	/* background-color: var(--colour-iden-second); */
 }
-blockquote::after {
+/* blockquote::after {
 	content: close-quote;
 	font-family: "source han sans", "bembo","Adobe Garamond Pro","Times New Roman","Georgia",serif;
     font-size: 1.5rem;
@@ -355,15 +360,11 @@ blockquote::after {
     float: none;
     position: absolute;
     right: 2.75rem;
-	/* margin-top: -15px; */
+	
 	font-style: normal;
 	line-height: 0.5rem;
 	display: inline;
-	/* transition: all 350ms;
-    -o-transition: all 350ms;
-    -moz-transition: all 350ms;
-	-webkit-transition: all 350ms; */
-}
+} */
 
 
 /* 文章注释（导出时不显示） */
@@ -849,6 +850,7 @@ table tbody+tbody {
 /* 脚注 */
 .footnotes{
 	margin-bottom: 0.33em !important;
+	text-align: left;
 }
 .footnotes .md-def-link .md-end-block:last-child{
 	margin-bottom: 1rem !important;
@@ -883,8 +885,9 @@ table tbody+tbody {
 }
 
 .md-def-split{
-	min-width: 0.25rem;
+	/* min-width: 0.25rem; */
 	/* max-width: 0.5rem; */
+	display: inline !important;
 }
 .md-def-split::before{
 	content: '' !important;
@@ -896,6 +899,7 @@ table tbody+tbody {
 	font-family: var(--font-body);
 	font-size: 0.9rem;
 	color: var(--colour-grey-1);
+	text-align: left;
 }
 
 /* 链接引用 */
@@ -907,6 +911,7 @@ table tbody+tbody {
 	font-weight: normal;
 	border-radius: 4px;
 	background-color: transparent;
+	display: inline;
 }
 
 .md-def-link{
@@ -942,6 +947,10 @@ table tbody+tbody {
 	font-family: var(--font-bold);
 	font-weight: normal;
 	margin-left: 0.5rem;
+	text-align: left;
+	display: inline;
+	word-wrap:break-word !important;
+	word-break:break-all !important;
 }
 .md-def-title::before, .md-def-title::after{
 	content: '"';
@@ -951,7 +960,7 @@ table tbody+tbody {
 /* 目录 */
 .md-toc-content{
 	background-color: var(--colour-paper);
-	border: 2px solid var(--colour-identity);
+	border: 2px solid var(--colour-grey-2);
 	border-radius: 10px;
 	margin: 2rem 1rem;
 	padding: 1rem;

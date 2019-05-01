@@ -8,7 +8,7 @@
 	--colour-grey-6:rgb(238,238,238);
 	--colour-paper:rgb(255, 255, 255);
 	
-	--colour-identity: rgb(14, 126, 73);
+	--colour-identity: rgb(8, 139, 78);
 	--colour-iden-second:rgb(224, 247, 236);
 	--colour-iden-third:rgb(178, 226, 204);
 
@@ -17,7 +17,7 @@
 	/* --colour-footnote-num:rgb(65, 71, 82); */
 	/* --colour-quote: rgb(112, 136, 172); */
 	/* --colour-quote-mark:#5c5c5c; */
-	--colour-hyperlink:rgb(4, 62, 170);
+	--colour-hyperlink:var(--colour-identity);
 	--colour-comment:rgb(236, 62, 91);
 
 	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
@@ -130,7 +130,7 @@ h2 {
 	/* margin: 0 0 2rem; */
 	padding: 0em 0.5em 0.1em;
 	text-align: center;
-	margin: 5rem auto 1.67rem;
+	margin: 6rem auto 1.67rem;
 	width: fit-content !important;
 	max-width: 30rem;
 	/* border-radius: 0.5em; */
@@ -306,10 +306,12 @@ blockquote {
 }
 
 blockquote, blockquote p {
-	line-height: 30px;
+	font-size: 16px;
+	line-height: 24px !important;
 	color: var(--colour-body);
 }
 blockquote li p {
+	font-size: inherit;
 	color:var(--colour-body);
 }
 blockquote .ul-list{
@@ -383,10 +385,10 @@ code, pre, samp, tt {
 
 code {
 	background: var(--colour-code-background);
-	color: var(--colour-grey-4);
+	color: var(--colour-grey-6);
 	border: 0px solid rgb(188, 188, 188);
 	border-radius: 5px;
-	padding: .1em 0.33rem;
+	padding: 0.1em 0.33rem;
 	font-size: 0.9em;
 	margin-left: 0.33em;
 	margin-right: 0.33em;
@@ -400,8 +402,8 @@ blockquote code{
 .md-fences {
 	background: var(--colour-code-background)!important;
 	border: 0px solid #ddd;
-	border-radius: 5px;
-	margin: 2rem 1rem;
+	border-radius: 10px;
+	margin: 2rem 0rem;
 	font-size: 75%;
 	padding: 1em 1em;
 	/* margin-left: 1em;
@@ -574,11 +576,11 @@ blockquote code{
 	text-indent: 0rem;
 	margin:0 1px ;
 	padding: 0 6px;
-	border:1px solid rgb(196, 196, 196);
-	border-radius: 2px;
+	border:0px solid rgb(196, 196, 196);
+	border-radius: 5px;
 }
 
-/* 数学公式块的背景颜色 */
+/* 数学公式块编辑状态的背景颜色 */
 .md-mathblock-input {
 	padding: 0;
 }
@@ -594,7 +596,7 @@ blockquote code{
 .md-mathblock-input .CodeMirror-linenumbers{
 	background-color: var(--colour-mathblock-background);
 }
-/* 数学公式块的字体颜色 */
+/* 数学公式块编辑状态的字体颜色 */
 .md-rawblock-tooltip{
 	font-size: 0.75rem;
 	color: rgb(233, 233, 233);
@@ -656,7 +658,7 @@ blockquote code{
 }
 
 .md-task-list-item>input:checked:before, .md-task-list-item>input[checked]:before {
-	background: rgb(9, 141, 101);
+	background: var(--colour-identity);
 	border-width:0px;
 	display: inline-block;
 	transition: background-color 200ms ease-in-out;
@@ -688,7 +690,7 @@ blockquote code{
 /* 以上内容摘自Typora自带主题pixyll，略有修改，可能受版权保护 */
 
 input{
-	color: rgb(9, 141, 101);
+	color: var(--colour-identity);
 }
 .task-list {
 	padding-left: 0;
@@ -767,6 +769,7 @@ hr{
 
 /* 表格 */
 .md-table-fig{
+	font-size: 16px;
 	margin: 1.25rem 0;
 	border-radius: 10px !important;
 	/* border: 1.5px solid var(--colour-grey-2) !important; */
@@ -785,31 +788,27 @@ table tr th {
 
 table {
 	margin-bottom: 20px;
-		
-	/* overflow:hidden;  */
-	/* border-top-left-radius:1em;
-	border-top-right-radius:1em;
-	border-bottom-right-radius:1em;
-	border-bottom-left-radius:1em; */
+
 }
 
-table th, table td {
-	padding: 8px 0.5rem;
-	line-height: 1.25rem;
+table th  {
+	padding: 0.5em 0.5em;
+	line-height: 1.25em;
+	vertical-align: bottom;
+	border-top: 1px solid var(--colour-grey-4);
+	text-align: center;
+}
+table td{
+	padding: 0.5em 0.5em;
+	line-height: 1.25em;
 	vertical-align: top;
 	border-top: 1px solid var(--colour-grey-4);
-	text-align: left;
-}
-table th{
 	text-align: center;
 }
 /* table th {
 	font-weight: bold
 } */
 /* 上面这一小段用于浏览器兼容 */
-table thead th {
-	vertical-align: bottom
-}
 
 /* table caption+thead tr:first-child th, table caption+thead tr:first-child td, table colgroup+thead tr:first-child th, table colgroup+thead tr:first-child td, 
 table thead:first-child tr:first-child th,
@@ -851,6 +850,9 @@ table tbody+tbody {
 .footnotes{
 	margin-bottom: 0.33em !important;
 }
+.footnotes .md-def-link .md-end-block:last-child{
+	margin-bottom: 1rem !important;
+}
 
 .md-footnote{
 	/* 这是文间标注 */
@@ -864,7 +866,7 @@ table tbody+tbody {
 .md-def-name{
 	/* 以下是文后详细注释 */
 	padding: 0 0.25rem;
-	color: var(--colour-grey-1);
+	color: var(--colour-body);
 	font-family: var(--font-bold);
 	font-size: 0.9rem;
 	font-weight: normal;
@@ -948,14 +950,15 @@ table tbody+tbody {
 
 /* 目录 */
 .md-toc-content{
-	background-color: rgb(245, 246, 247);
-	border: 2px solid rgb(199, 199, 199);
+	background-color: var(--colour-paper);
+	border: 2px solid var(--colour-identity);
+	border-radius: 10px;
 	margin: 2rem 1rem;
 	padding: 1rem;
 	text-align: left;
 }
 .md-toc-content a{
-	color: #000000;
+	color: var(--colour-identity);
 }
 
 .md-toc-item{

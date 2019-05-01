@@ -29,7 +29,9 @@
 	--font-thinnest: "segoeuil", "HYqihei 40S",sans-serif;
 	/* --font-italic: "segoeuiitalic", "HYZhongsongs", sans-serif; */
 	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "HYqihei 65S", monospace;;
-
+	--size-p:18px;
+	--size-h4:calc(calc(5/3)*var(--size-p));
+	--size-h5:calc(1.25*var(--size-p));
 }
 
 /*定义全局色彩和字体变量*/
@@ -74,7 +76,7 @@ html, body, #write {
 }
 
 html {
-	font-size: 18px;
+	font-size: var(--size-p);
 	/* hyphens: auto; */
 	/*标准字体大小，此后所有rem单位均以此为准*/
 }
@@ -112,8 +114,8 @@ h1 {
 	font-weight: normal;
 	font-size: 2.5rem;
 	line-height: 3rem;
-	margin: 8rem auto 1.67rem;
-	padding: 0.25em 0em;
+	margin: 15rem auto 1.67rem;
+	padding: 0.25em 0.5em;
 	text-align: center;
 	width: fit-content !important;
 	max-width: 35rem;
@@ -128,14 +130,11 @@ h2 {
 	font-weight: normal;
 	font-size: 2rem;
 	line-height: 2.5rem;
-	/* margin: 0 0 2rem; */
 	padding: 0em 0.5em 0.1em;
 	text-align: center;
-	margin: 6rem auto 1.67rem;
+	margin: 10rem auto 1.67rem;
 	width: fit-content !important;
 	max-width: 30rem;
-	/* border-radius: 0.5em; */
-	/* background-color: var(--colour-iden-third); */
 	border-bottom: 0.15em solid var(--colour-body);
 }
 
@@ -147,35 +146,31 @@ h3 {
 	line-height: 1em;
 	text-align: center;
 	padding: 0em 0em 0.15em;
-	margin: 4rem auto 1.67rem;
-	/* border-left: 24px solid var(--colour-identity); */
-	/* padding-left: 12px; */
+	margin: 5rem auto 1.67rem;
 	width: fit-content !important;
 	border-bottom: 0.1em solid var(--colour-body);
 }
 
+
 h4 {
 	font-family: var(--font-second);
 	color: var(--colour-body);
-	/* padding-top: 1.25rem; */
 	font-weight: normal;
-	font-size: 1.5rem;
+	font-size: var(--size-h4);
 	line-height: 1em;
 	text-align: left;
-	/* padding: 0 2em 0 0; */
 	margin-top: 3rem;
 	margin-bottom: 1rem;
 	margin-left: 0;
 	width: fit-content !important;
 	border-bottom: 2.5px solid var(--colour-body);
-	/* border-top: 2px solid var(--colour-body); */
 	padding: 0em 0em 0.15em 0em;
 }
 
 h5 {
 	font-family: var(--font-second);
 	color: var(--colour-body);
-	font-size: 1.25rem;
+	font-size: var(--size-h5);
 	font-weight: normal;
 	line-height: 1em;
 	text-align: left;
@@ -394,6 +389,7 @@ code {
 	font-size: 0.9em;
 	margin-left: 0.33em;
 	margin-right: 0.33em;
+	vertical-align: baseline;
 }
 blockquote code{
 	color: var(--colour-grey-6);

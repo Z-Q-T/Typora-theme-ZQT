@@ -8,11 +8,11 @@
 	--colour-grey-6:rgb(243,243,243);
 	--colour-paper:rgb(255, 255, 255);
 	
-	--colour-iden-1:hsl(157, 91%, 31%);
-	--colour-iden-2:hsl(157, 61%, 45%);
-	--colour-iden-3:hsl(157, 60%, 66%);
-	--colour-iden-4:hsl(157, 49%, 83%);
-	--colour-iden-5:hsl(157, 66%, 94%);
+	--colour-iden-1:hsl(154, 60%, 35%);
+	--colour-iden-2:hsl(153, 55%, 50%);
+	--colour-iden-3:hsl(152, 50%, 65%);
+	--colour-iden-4:hsl(151, 45%, 80%);
+	--colour-iden-5:hsl(150, 40%, 95%);
 
 	--colour-code-background:rgb(50, 55, 55);
 	--colour-mathblock-background:rgb(42, 82, 70);
@@ -977,14 +977,15 @@ table tbody+tbody {
 .md-def-link .md-def-content{
 	font-family: var(--font-body);
 	font-size: 0.9rem;
-	color: var(--colour-body);
+	color: var(--colour-grey-1);
 }
 .md-def-link .md-def-split::before{
 	content: " " !important;
 }
 .md-def-title{
-	font-family: var(--font-bold);
+	font-family: var(--font-second);
 	font-weight: normal;
+	color: var(--colour-grey-1);
 	margin-left: 0.5rem;
 	text-align: left;
 	display: inline;
@@ -993,20 +994,20 @@ table tbody+tbody {
 }
 .md-def-title::before, .md-def-title::after{
 	content: '"';
-	color: var(--colour-body)
+	color: var(--colour-grey-1);
 }
 
 /* 目录 */
 .md-toc-content{
-	background-color: var(--colour-paper);
-	border: 2px solid var(--colour-grey-2);
+	background-color: var(--colour-iden-5);
+	border: 0px solid var(--colour-grey-2);
 	border-radius: 10px;
 	margin: 2rem 1rem;
 	padding: 1rem;
 	text-align: left;
 }
 .md-toc-content a{
-	color: var(--colour-iden-1);
+	color: var(--colour-body);
 }
 
 .md-toc-item{

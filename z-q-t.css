@@ -1,17 +1,17 @@
 :root {
 	--colour-body: rgb(0, 0, 0);
-	--colour-grey-1: rgb(51,51,51);
-	--colour-grey-2:rgb(102,102,102);
-	--colour-grey-3:rgb(153, 153, 153);
-	--colour-grey-4:rgb(204, 204, 204);
-	--colour-grey-5:rgb(221,221,221);
-	--colour-grey-6:rgb(238,238,238);
+	--colour-grey-1: rgb(97,97,97);
+	--colour-grey-2:rgb(158, 158, 158);
+	--colour-grey-3:rgb(195, 195, 195);
+	--colour-grey-4:rgb(218, 218, 218);
+	--colour-grey-5:rgb(232,232,232);
+	--colour-grey-6:rgb(243,243,243);
 	--colour-paper:rgb(255, 255, 255);
 	
 	--colour-iden-1:hsl(157, 91%, 31%);
 	--colour-iden-2:hsl(157, 61%, 45%);
-	--colour-iden-3:hsl(157, 62%, 75%);
-	--colour-iden-4:hsl(157, 54%, 84%);
+	--colour-iden-3:hsl(157, 60%, 66%);
+	--colour-iden-4:hsl(157, 49%, 83%);
 	--colour-iden-5:hsl(157, 66%, 94%);
 
 	--colour-code-background:rgb(50, 55, 55);
@@ -31,6 +31,7 @@
 	--font-thinnest: "segoeuil", "HYqihei 40S",sans-serif;
 	/* --font-italic: "segoeuiitalic", "HYZhongsongs", sans-serif; */
 	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "HYqihei 65S", monospace;;
+
 	--size-p:18px;
 	--size-h2:calc(2*var(--size-p));
 	--size-h3:calc(1.75*var(--size-p));
@@ -123,9 +124,9 @@ h1 {
 	text-align: center;
 	width: fit-content !important;
 	max-width: 35rem;
-	border-bottom: 0.2em solid var(--colour-iden-1);
-	border-top: 0.2em solid var(--colour-iden-1);
-	background-color: var(--colour-iden-3)
+	border-bottom: 0.25em double var(--colour-body);
+	/* border-top: 0.15em solid var(--colour-body); */
+	/* background-color: var(--colour-iden-5); */
 	
 }
 
@@ -140,10 +141,10 @@ h2 {
 	margin: 10rem auto 1.67rem;
 	width: fit-content !important;
 	max-width: 30rem;
-	border-bottom: 0.15em solid var(--colour-iden-1);
-	border-left: 0.15em solid var(--colour-iden-1);
-	border-right: 0.15em solid var(--colour-iden-1);
-	background-color: var(--colour-iden-3)
+	border-bottom: 0.1em solid var(--colour-iden-2);
+	/* border-left: 0.15em solid var(--colour-iden-1);
+	border-right: 0.15em solid var(--colour-iden-1); */
+	/* background-color: var(--colour-iden-3) */
 }
 
 h3 {
@@ -153,12 +154,12 @@ h3 {
 	font-size: var(--size-h3);
 	line-height: 1em;
 	text-align: center;
-	padding: 0.25em 0.25em 0.3em;
+	padding: 0em 0em 0.25em;
 	margin: 5rem auto 1.67rem;
 	width: fit-content !important;
-	border-bottom: 0.1em solid var(--colour-iden-2);
+	border-bottom: 0.1em solid var(--colour-body);
 	/* border-right: 0.1em solid var(--colour-iden-2); */
-	background-color: var(--colour-iden-4)
+	/* background-color: var(--colour-iden-4) */
 }
 
 
@@ -173,10 +174,10 @@ h4 {
 	margin-bottom: 1rem;
 	margin-left: 0;
 	width: fit-content !important;
-	border-left: 4px solid var(--colour-iden-2);
+	border-left: 0.15em solid var(--colour-iden-2);
 	/* border-right: 2px solid var(--colour-iden-3); */
-	padding: 0.15em 0.25em;
-	background-color: var(--colour-iden-4)
+	padding: 0.15em 0em 0.2em 0.25em;
+	/* background-color: var(--colour-iden-4) */
 }
 
 h5 {
@@ -190,9 +191,9 @@ h5 {
 	margin-bottom: 0.67rem;
 	margin-left: 0;
 	width: fit-content !important;
-	border-left: 3px solid var(--colour-iden-2);
-	padding:0.15em 0.25em;
-	background-color: var(--colour-iden-5);
+	border-left: 0.15em solid var(--colour-grey-2);
+	padding:0.15em 0 0.2em 0.25em;
+	/* background-color: var(--colour-iden-5); */
 }
 
 h6 {
@@ -203,12 +204,12 @@ h6 {
 	line-height: 1em;
 	text-align: left;
 	/* text-decoration: underline; */
-	padding: 0 0.2em 0.1em;
+	padding: 0 0 0 0.25em;
 	margin-top: 1.5rem;
-	margin-bottom: 0.4rem;
+	margin-bottom: 0.5rem;
 	margin-left: 0;
 	width: fit-content !important;
-	border-left: 2px solid var(--colour-iden-2);
+	border-left: 2px solid var(--colour-iden-3);
 }
 
 p {
@@ -274,7 +275,7 @@ ul li p {
 
 }
 .ul-list{
-	color: var(--colour-grey-2);
+	color: var(--colour-grey-1);
 	padding-left: 3rem !important;
 	padding-right: 2rem; 
 }
@@ -301,7 +302,7 @@ ol li p {
 	text-align: left;
 }
 .ol-list{
-	color: var(--colour-grey-2);
+	color: var(--colour-grey-1);
 	padding-left: 3rem;
 	padding-right: 2rem;
 }
@@ -816,7 +817,7 @@ table tr th {
 	font-family: var(--font-bold);
 	font-weight: normal;
 	border-bottom: 1px solid var(--colour-grey-2);
-	background-color: var(--colour-grey-5);
+	background-color: var(--colour-grey-4);
 	/* border-top: 2px solid var(--colour-grey-2); */
 }
 .td-span {
@@ -832,14 +833,14 @@ table th  {
 	padding: 0.5em 0.5em;
 	line-height: 1.25em;
 	vertical-align: bottom;
-	border-top: 1px solid var(--colour-grey-4);
+	/* border-top: 1px solid var(--colour-grey-3); */
 	text-align: center;
 }
 table td{
 	padding: 0.5em 0.5em;
 	line-height: 1.25em;
 	vertical-align: top;
-	border-top: 1px solid var(--colour-grey-4);
+	border-top: 1px solid var(--colour-grey-3);
 	text-align: center;
 }
 /* table th {

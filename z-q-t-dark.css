@@ -1,12 +1,12 @@
 :root {
-	--colour-body: rgb(0, 0, 0);
+	--colour-body: rgb(165, 165, 165);
 	--colour-grey-1: rgb(97,97,97);
 	--colour-grey-2:rgb(158, 158, 158);
 	--colour-grey-3:rgb(195, 195, 195);
 	--colour-grey-4:rgb(218, 218, 218);
 	--colour-grey-5:rgb(232,232,232);
 	--colour-grey-6:rgb(243,243,243);
-	--colour-paper:rgb(255, 255, 255);
+	--colour-paper:rgb(13, 22, 26);
 	
 	--colour-iden-1:hsl(154, 60%, 35%);
 	--colour-iden-2:hsl(153, 55%, 50%);

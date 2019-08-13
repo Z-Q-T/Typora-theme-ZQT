@@ -24,7 +24,7 @@
     --item-hover-text-color: white;
     --primary-color: #6dc1e7;
 
-    --rawblock-edit-panel-bd: #4B535A;
+    --rawblock-edit-panel-bd: #333;
 }
 
 html {
@@ -38,6 +38,7 @@ body {
     background: #363B40;
     background: var(--bg-color);
     fill: currentColor;
+    line-height: 1.625rem;
 }
 
 #write {
@@ -57,11 +58,11 @@ div.code-tooltip-content {
 
 div.code-tooltip,
 .md-hover-tip .md-arrow:after {
-    background: #4B535A;
+    background: #333;
 }
 
 .popover.bottom > .arrow:after {
-    border-bottom-color: #4B535A;
+    border-bottom-color: #333;
 }
 
 html,
@@ -70,8 +71,6 @@ button,
 input,
 select,
 textarea {
-    font-style: normal;
-    line-height: 1.625rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -325,13 +324,14 @@ kbd {
 }
 
 pre.md-fences {
-    padding: 10px 30px;
+    padding: 10px 10px 10px 30px;
     margin-bottom: 20px;
-    border: 1px solid;
+    background: #333;
 }
 
-.md-fences .code-tooltip {
-    bottom: -3.2em;
+.CodeMirror-gutters {
+    background: #333;
+    border-right: 1px solid transparent;
 }
 
 .enable-diagrams pre.md-fences[lang="sequence"] .code-tooltip,
@@ -446,12 +446,6 @@ td {
     font-size: 0.625rem;
     line-height: 0.625rem;
     color: #DEDEDE;
-}
-
-.CodeMirror-gutters {
-    background: transparent;
-    background: var(--bg-color);
-    border-right: 1px solid transparent;
 }
 
 /** quick open **/
@@ -651,7 +645,7 @@ h6.md-focus .md-attr,
 }
 
 .md-table-resize-popover {
-    background-color: #4B535A;
+    background-color: #333;
 }
 
 .form-inline .input-group .input-group-addon {

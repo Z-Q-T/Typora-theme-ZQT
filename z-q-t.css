@@ -21,6 +21,8 @@
 	/* --colour-quote-mark:#5c5c5c; */
 	--colour-hyperlink:var(--colour-iden-1);
 	--colour-comment:rgb(245, 43, 77);
+	--colour-search-unselected:rgba(138, 252, 182, 0.5);
+	--colour-search-selected:rgb(0, 206, 110);
 
 	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
 	--font-second: "segoeuisemibold", "HYqihei 75S", sans-serif;
@@ -1089,6 +1091,30 @@ table tbody+tbody {
 }
 .md-toc-h6 .md-toc-inner{
 	/* padding-left:3.25em; */
+}
+
+/* ctrl+F搜索相关 */
+.cm-search-hit{/*未选中的搜索（段落代码）*/
+	background-color: var(--colour-search-unselected) !important;
+	color: var(--colour-body) !important;
+}
+.cm-s-inner .cm-search-hit.CodeMirror-selected, .cm-s-inner .cm-search-hit.CodeMirror-selectedtext{/*选中的搜索（段落代码）*/
+	background-color: var(--colour-search-selected) !important;
+	color: var(--colour-paper) !important;
+}
+.md-search-hit{/*未选中的搜索*/
+	background-color: var(--colour-search-unselected) !important;
+	color: var(--colour-body)!important;
+}
+.md-search-hit code{/*未选中的搜索（行内代码）*/
+	color: var(--colour-body)!important;
+}
+.md-search-select{/*选中的搜索*/
+	background-color: var(--colour-search-selected) !important;
+	color: var(--colour-paper)!important;
+}
+.md-search-select code{/*选中的搜索（行内代码）*/
+	color: var(--colour-paper)!important;
 }
 
 /* 右键菜单 */

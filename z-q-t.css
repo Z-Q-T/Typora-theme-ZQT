@@ -414,7 +414,7 @@ blockquote code{
 	background: var(--colour-code-background)!important;
 	border: 0px solid #ddd;
 	border-radius: 10px;
-	margin: 2rem 0rem;
+	margin: 1.5rem 0rem;
 	font-size: 75%;
 	padding: 1em 1em;
 	/* margin-left: 1em;
@@ -808,7 +808,7 @@ hr{
 /* 表格 */
 .md-table-fig{
 	font-size: 16px;
-	margin: 1.25rem 0;
+	margin: 1.5rem 0;
 	border-radius: 10px !important;
 	/* border: 1.5px solid var(--colour-grey-2) !important; */
 	background-color: var(--colour-grey-6);

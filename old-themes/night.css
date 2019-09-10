@@ -951,6 +951,10 @@ footer.ty-footer {
     line-height: 22px;
 }
 
+.html-for-mac .file-node-open-state, .html-for-mac .file-node-icon {
+    line-height: 26px;
+}
+
 ::-webkit-scrollbar-thumb {
     background: rgba(230, 230, 230, 0.30);
 }

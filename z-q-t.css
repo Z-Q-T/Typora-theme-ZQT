@@ -940,6 +940,15 @@ table tbody+tbody {
 	word-wrap:break-word !important;
 	word-break:break-all !important;
 }
+/* 这是鼠标悬停在文间注释上显示出来的解释 */
+.md-hover-tip .code-tooltip-content {
+	font-size: 0.75rem;
+	width: auto;
+	max-width: 14.5rem;
+	padding: 0.35rem 0.5rem 0.5rem 0.5rem;
+	margin: 0 !important;
+	text-align: left !important;
+}
 
 /* 链接引用 */
 .md-def-link .md-def-name{

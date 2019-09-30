@@ -31,7 +31,9 @@
 	--font-bold: "segoeuibold", "HYqihei 85S", sans-serif;
 	--font-thinnest: "segoeuil", "HYqihei 40S",sans-serif;
 	/* --font-italic: "segoeuiitalic", "HYZhongsongs", sans-serif; */
-	--font-code:"Source Code Pro", "ZQT'sConsolas", 'consolas', "HYqihei 65S", monospace;;
+	--font-code:"Source Code Pro", 'consolas', "HYqihei 65S", monospace;
+	--font-code-sb:"Source Code Pro Medium", 'consolas', "HYqihei 75S", monospace;
+	--font-code-b:"Source Code Pro Semibold", 'consolas', "HYqihei 85S", monospace;
 
 	--size-p:18px;
 	--size-h2:calc(2*var(--size-p));
@@ -73,6 +75,13 @@
 	font-style: normal;
 	font-weight: normal;
 }
+@font-face{
+	font-family: 'Source Code Pro Bold';
+	src: local('Source Code Pro Bold'), url('./z-q-t/SourceCodePro-Bold.otf') format('opentype');
+	font-style: normal;
+	font-weight: normal;
+}
+
 /* 包含#write的部分只会对书写区域的内容产生影响，而不会影响到菜单、对话框等界面 */
 
 html, body, #write {
@@ -390,7 +399,24 @@ code, pre, samp, tt {
 	font-family: var(--font-code);
 	text-align: left;
 }
-
+h1 code{
+	font-family: var(--font-code-b);
+}
+h2 code{
+	font-family: var(--font-code-b);
+}
+h3 code{
+	font-family: var(--font-code-sb);
+}
+h4 code{
+	font-family: var(--font-code-sb);
+}
+h5 code{
+	font-family: var(--font-code-sb);
+}
+h6 code{
+	font-family: var(--font-code-sb);
+}
 /* 段落内代码 */
 
 code {

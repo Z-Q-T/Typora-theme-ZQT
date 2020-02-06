@@ -147,15 +147,16 @@ h2 {
 	font-weight: normal;
 	font-size: var(--size-h2);
 	line-height: 2.5rem;
-	padding: 0em 0.5em 0.1em;
+	/* padding: 0em 0.5em 0.1em; */
 	text-align: center;
 	margin: 10rem auto 1.67rem;
 	width: fit-content !important;
 	max-width: 30rem;
+	/* border-bottom: 0.15em solid var(--colour-iden-2); */
+}
+h2 > span{
+	padding: 0em 0.3em 0.15em;
 	border-bottom: 0.15em solid var(--colour-iden-2);
-	/* border-left: 0.15em solid var(--colour-iden-1);
-	border-right: 0.15em solid var(--colour-iden-1); */
-	/* background-color: var(--colour-iden-3) */
 }
 
 h3 {
@@ -202,8 +203,8 @@ h5 {
 	margin-bottom: 0.67rem;
 	margin-left: 0;
 	width: fit-content !important;
-	border-left: 0.15em solid var(--colour-body);
-	padding:0.2em 0 0.2em 0.25em;
+	border-left: 0.15em solid var(--colour-grey-0);
+	padding:0.2em 0 0.2em 0.3em;
 	/* background-color: var(--colour-iden-5); */
 }
 

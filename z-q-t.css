@@ -26,12 +26,12 @@
 	--colour-search-unselected:rgba(226, 142, 201, 0.75);
 	--colour-search-selected:rgb(255, 0, 200);
 
-	--font-heaviest: "segoeuibold", "HYqihei 95S", sans-serif;
-	--font-second: "segoeuisemibold", "HYqihei 75S", sans-serif;
+	--font-heaviest: "segoe ui bold", "segoeuibold", "HYqihei 95S", sans-serif;
+	--font-second: "segoe ui semibold", "segoeuisemibold", "HYqihei 75S", sans-serif;
 	/* --font-serif: "FZYouSongJ GBK 509R", "思源宋体", serif; */
 	--font-body: "Segoe UI", "HYqihei 55S", sans-serif;
-	--font-bold: "segoeuibold", "HYqihei 85S", sans-serif;
-	--font-thinnest: "segoeuil", "HYqihei 40S",sans-serif;
+	--font-bold: "segoe ui bold", "segoeuibold", "HYqihei 85S", sans-serif;
+	--font-thinnest: "segoe ui light", "segoeuil", "HYqihei 40S",sans-serif;
 	/* --font-italic: "segoeuiitalic", "HYZhongsongs", sans-serif; */
 	--font-code:"Source Code Pro", 'consolas', "HYqihei 65S", monospace;
 	--font-code-sb:"Source Code Pro Medium", 'consolas', "HYqihei 75S", monospace;

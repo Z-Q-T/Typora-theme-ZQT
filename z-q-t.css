@@ -1,5 +1,6 @@
 :root {
 	--colour-body: rgb(0, 0, 0);
+	--colour-grey-0: rgb(50, 50, 50);
 	--colour-grey-1: rgb(97,97,97);
 	--colour-grey-2:rgb(158, 158, 158);
 	--colour-grey-3:rgb(195, 195, 195);
@@ -12,7 +13,8 @@
 	--colour-iden-2:hsl(153, 55%, 50%);
 	--colour-iden-3:hsl(152, 50%, 65%);
 	--colour-iden-4:hsl(151, 45%, 80%);
-	--colour-iden-5:hsl(150, 40%, 95%);
+	--colour-iden-5:hsl(151, 69%, 91%);
+	--colour-iden-6:hsl(150, 40%, 95%);
 
 	--colour-code-background:rgb(50, 55, 55);
 	--colour-mathblock-background:rgb(42, 82, 70);
@@ -150,7 +152,7 @@ h2 {
 	margin: 10rem auto 1.67rem;
 	width: fit-content !important;
 	max-width: 30rem;
-	border-bottom: 0.1em solid var(--colour-iden-2);
+	border-bottom: 0.15em solid var(--colour-iden-2);
 	/* border-left: 0.15em solid var(--colour-iden-1);
 	border-right: 0.15em solid var(--colour-iden-1); */
 	/* background-color: var(--colour-iden-3) */
@@ -166,7 +168,7 @@ h3 {
 	padding: 0em 0em 0.25em;
 	margin: 5rem auto 1.67rem;
 	width: fit-content !important;
-	border-bottom: 0.1em solid var(--colour-body);
+	border-bottom: 0.15em solid var(--colour-body);
 	/* border-right: 0.1em solid var(--colour-iden-2); */
 	/* background-color: var(--colour-iden-4) */
 }
@@ -183,9 +185,9 @@ h4 {
 	margin-bottom: 1rem;
 	margin-left: 0;
 	width: fit-content !important;
-	border-left: 0.15em solid var(--colour-iden-2);
+	border-left: 0.2em solid var(--colour-iden-2);
 	/* border-right: 2px solid var(--colour-iden-3); */
-	padding: 0.15em 0em 0.2em 0.25em;
+	padding: 0.2em 0em 0.2em 0.25em;
 	/* background-color: var(--colour-iden-4) */
 }
 
@@ -200,8 +202,8 @@ h5 {
 	margin-bottom: 0.67rem;
 	margin-left: 0;
 	width: fit-content !important;
-	border-left: 0.15em solid var(--colour-grey-2);
-	padding:0.15em 0 0.2em 0.25em;
+	border-left: 0.15em solid var(--colour-body);
+	padding:0.2em 0 0.2em 0.25em;
 	/* background-color: var(--colour-iden-5); */
 }
 
@@ -218,7 +220,7 @@ h6 {
 	margin-bottom: 0.5rem;
 	margin-left: 0;
 	width: fit-content !important;
-	border-left: 2px solid var(--colour-iden-3);
+	border-left: 2px solid var(--colour-grey-2);
 }
 
 p {
@@ -420,26 +422,26 @@ h6 code{
 /* 段落内代码 */
 
 code {
-	background:var(--colour-grey-6);
-	color: var(--colour-body);
-	border: 1px solid var(--colour-grey-3);
+	background:var(--colour-grey-0);
+	color: var(--colour-grey-6);
+	border: 0px solid var(--colour-iden-3);
 	border-radius: 5px;
-	padding: 0.1em 0.2em;
+	padding: 0.1em 0.3em;
 	font-size: 0.9em;
 	margin-left: 0.33em;
 	margin-right: 0.33em;
 	vertical-align: baseline;
 }
 blockquote code{
-	color: var(--colour-body);
+	color: var(--colour-grey-6);
 }
 
 
 /* 单独代码段 */
 .md-fences {
-	background: var(--colour-code-background)!important;
+	background: var(--colour-grey-0)!important;
 	border: 0px solid #ddd;
-	border-radius: 10px;
+	border-radius: 8px;
 	margin: 1.5rem 0rem;
 	font-size: 75%;
 	padding: 1em 1em;
@@ -458,7 +460,7 @@ blockquote code{
 }
 
 .md-fences .code-tooltip {
-	background-color: var(--colour-code-background);
+	background-color: var(--colour-grey-0);
 	border-radius: 10px;
 	text-indent: 0 !important;
 }
@@ -510,12 +512,12 @@ blockquote code{
 /* 代码高亮 */
 
 .cm-s-inner {
-	background-color: var(--colour-code-background);
+	background-color: var(--colour-grey-0);
 	color: rgba(233, 237, 237, 1);
 }
 
 .cm-s-inner .CodeMirror-gutters {
-	background: var(--colour-code-background);
+	background: var(--colour-grey-0);
 	color: rgb(83, 127, 126);
 	border: none;
 }
@@ -547,7 +549,7 @@ blockquote code{
 	color: #333!important;
 }
 .cm-s-inner .CodeMirror-activeline-background {
-	background: rgba(218, 218, 218, 0.3);
+	background: rgba(255, 255, 255, 0.103);
 }
 
 .cm-s-inner .cm-atom {
@@ -1034,7 +1036,7 @@ table tbody+tbody {
 
 /* 目录 */
 .md-toc-content{
-	background-color: var(--colour-iden-5);
+	background-color: var(--colour-iden-6);
 	border: 0px solid var(--colour-grey-2);
 	border-radius: 10px;
 	margin: 2rem 1rem;

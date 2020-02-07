@@ -354,7 +354,7 @@ ul,
 ol,
 dl,
 table{
-    list-style-type: disc 
+    list-style-type: disc;
     margin: 0.8em 0;
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;

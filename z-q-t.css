@@ -166,14 +166,15 @@ h3 {
 	font-size: var(--size-h3);
 	line-height: 1em;
 	text-align: center;
-	padding: 0em 0em 0.25em;
+	/* padding: 0em 0em 0.25em; */
 	margin: 5rem auto 1.67rem;
 	width: fit-content !important;
-	border-bottom: 0.15em solid var(--colour-body);
-	/* border-right: 0.1em solid var(--colour-iden-2); */
-	/* background-color: var(--colour-iden-4) */
+	/* border-bottom: 0.15em solid var(--colour-body); */
 }
-
+h3 > span{
+	padding: 0em 0.1em 0.15em;
+	border-bottom: 0.15em solid var(--colour-body);
+}
 
 h4 {
 	font-family: var(--font-second);
@@ -221,7 +222,7 @@ h6 {
 	margin-bottom: 0.5rem;
 	margin-left: 0;
 	width: fit-content !important;
-	border-left: 2px solid var(--colour-grey-2);
+	border-left: 3px solid var(--colour-grey-2);
 }
 
 p {

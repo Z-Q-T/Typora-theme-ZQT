@@ -894,6 +894,10 @@ input {
 
 /* 左侧文件列表激活的项 */
 
+#typora-sidebar {
+    background-color: var(--colour-paper);
+}
+
 .file-list-item.active {
     background: #d6d6d6;
 }

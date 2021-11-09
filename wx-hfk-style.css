@@ -1,9 +1,10 @@
 h3 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     line-height: 1.5em !important;
     text-align: center;
-    text-decoration: underline;
+    margin: 6rem 0 2rem 0;
+    /* text-decoration: underline; */
 }
 
 h4 {
@@ -11,27 +12,30 @@ h4 {
     font-weight: bold;
     line-height: 1.5em !important;
     text-align: center;
-    text-decoration: underline;
+    margin: 5rem 0 2rem 0;
+    /* text-decoration: underline; */
 }
 
 h5 {
     font-size: 24px;
-    font-weight: bold;
+    /* font-weight: bold; */
     line-height: 1.5em !important;
-    text-align: center;
+    text-align: left;
+    margin: 4rem 0 2rem 0;
 }
 
 h6 {
     font-size: 22px;
     font-weight: bold;
     line-height: 1.5em !important;
-    text-align: center;
+    text-align: left;
+    margin: 3rem 0 2rem 0;
 }
 
 p {
     /* color: var(--colour-body); */
     font-size: 20px;
-    line-height: calc(9/5) !important;
+    line-height: 1.8em !important;
     margin: 2rem 0 2rem 0;
     /*段落之间空一行*/
     /* margin: 0; */

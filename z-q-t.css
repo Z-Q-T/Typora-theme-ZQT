@@ -8,6 +8,8 @@
 	--colour-grey-5: rgb(232, 232, 232);
 	--colour-grey-6: rgb(243, 243, 243);
 	--colour-paper: rgb(248, 248, 245);
+	--colour-paper-semidark: rgb(242, 242, 236);
+	--colour-paper-dark: rgb(230, 230, 224);
 	--colour-iden-1: hsl(154, 59%, 40%);
 	--colour-iden-2: hsl(153, 55%, 50%);
 	--colour-iden-3: hsl(152, 50%, 65%);
@@ -23,9 +25,9 @@
 	--colour-comment: rgb(245, 43, 77);
 	--colour-search-unselected: rgba(226, 142, 201, 0.75);
 	--colour-search-selected: rgb(255, 0, 200);
-	--font-heaviest: "HYqihei 95S", sans-serif;
-	--font-second: "HYqihei 75S", sans-serif;
-	/* --font-serif: "FZYouSongJ GBK 509R", "思源宋体", serif; */
+	--font-hei-1: "HYqihei 95S", sans-serif;
+	--font-hei-2: "HYqihei 75S", sans-serif;
+	/* --font-song: "Source Han Serif SC", "Source Han Serif CN", "思源宋体", serif; */
 	--font-body: "HYqihei 55S", sans-serif;
 	--font-bold: "HYqihei 85S", sans-serif;
 	--font-thinnest: "HYqihei 40S", sans-serif;
@@ -36,7 +38,7 @@
 	--font-code-b: "Source Code Pro Semibold", "consolas", "HYqihei 85S",
 		monospace;
 	--size-p: 18px;
-    --size-h1:calc(2.5 * var(--size-p))
+	--size-h1: calc(2.5 * var(--size-p));
 	--size-h2: calc(2 * var(--size-p));
 	--size-h3: calc(1.75 * var(--size-p));
 	--size-h4: calc(1.5 * var(--size-p));
@@ -124,87 +126,85 @@ html {
 /* 标题与正文 */
 
 h1 {
-	font-family: var(--font-heaviest);
+	font-family: var(--font-hei-1);
 	font-weight: normal;
 	color: var(--colour-body);
 	font-size: 3rem;
-	line-height: 3rem;
-	margin: 15rem auto 5rem;
-	padding: 0.25em 0.5em;
+	line-height: 4rem;
+	margin: 16rem auto 6rem;
+	/* padding: 0.25em 0.5em; */
 	text-align: center;
 	width: fit-content !important;
 	max-width: 35rem;
+	border-bottom: 0.3rem solid var(--colour-iden-2);
 }
 
 h2 {
-	font-family: var(--font-heaviest);
+	font-family: var(--font-hei-1);
 	font-weight: normal;
 	color: var(--colour-body);
-	font-size: 2rem;
-	line-height: 2.5rem;
-	margin: 10rem auto 3rem;
-	padding: 0em 0.5em 0.25em;
+	font-size: 2.5rem;
+	line-height: 3rem;
+	margin: 12rem auto 4rem;
+	/* padding: 0em 0.5em 0.25em; */
 	text-align: center;
 	width: fit-content !important;
 	max-width: 30rem;
 	/* border-bottom: 0.15em solid var(--colour-iden-2); */
+	/* background-color: var(--colour-iden-5); */
+	border-bottom: 0.2rem solid var(--colour-body);
 }
 
 h3 {
-	font-family: var(--font-second);
+	font-family: var(--font-hei-2);
+	font-weight: normal;
+	color: var(--colour-body);
+	font-size: 2rem;
+	line-height: 2.5rem;
+	margin: 8rem auto 3rem;
+	text-align: center;
+	/* padding: 0em 0.5em 0.25em; */
+	width: fit-content !important;
+	max-width: 30rem;
+	/* background-color: var(--colour-iden-5); */
+	border-bottom: 0.1rem solid var(--colour-body);
+}
+
+h4 {
+	font-family: var(--font-hei-2);
 	font-weight: normal;
 	color: var(--colour-body);
 	font-size: 1.5rem;
 	line-height: 2rem;
-	margin: 5rem auto 2rem;
+	margin: 3rem auto 1rem;
 	text-align: center;
-	padding: 0em 0.5em 0.25em;
-	width: fit-content !important;
-	max-width: 30rem;
-	/* border-bottom: 0.1em solid var(--colour-body); */
-}
-
-h4 {
-	font-family: var(--font-second);
-	font-weight: normal;
-	color: var(--colour-body);
-	font-size: 1.25rem;
-	line-height: 1.5rem;
-	margin-top: 3rem;
-	margin-bottom: 1rem;
-	margin-left: 0;
-	text-align: left;
-	padding-left:2rem;
+	/* padding-left:2rem; */
 	width: fit-content !important;
 	/* border-left: 0.25rem solid var(--colour-iden-2); */
 }
 
 h5 {
-	font-family: var(--font-second);
+	font-family: var(--font-hei-2);
 	font-weight: normal;
 	color: var(--colour-body);
-	font-size: 1.1rem;
-	line-height: 1.25rem;
-	margin-top: 2rem;
-	margin-bottom: 0.75rem;
-	margin-left: 0;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	margin: 2rem 0 1rem;
 	text-align: left;
-	padding-left:2rem;
+	/* padding-left:2rem; */
 	width: fit-content !important;
 	/* border-left: 0.15rem solid var(--colour-grey-0); */
 }
 
 h6 {
-	font-family: var(--font-second);
+	font-family: var(--font-hei-2);
 	font-weight: normal;
 	color: var(--colour-body);
 	font-size: 1rem;
-	line-height: 1.1rem;
-	margin-top: 1.5rem;
-	margin-bottom: 0.5rem;
-	margin-left: 0;
+	line-height: 1.25rem;
+	margin: 0.5rem 0 0.5rem;
 	text-align: left;
-	padding-left: 0;
+	padding-left: 1rem;
 	width: fit-content !important;
 	/* border-left: 3px solid var(--colour-grey-2); */
 }
@@ -318,7 +318,7 @@ blockquote {
 	padding: 20pt;
 	/* border-left: 0.2rem solid #ccc; */
 	border-radius: 10px;
-	background-color: var(--colour-grey-6);
+	background-color: var(--colour-paper-dark);
 	overflow: visible;
 	font-size: 0.9rem;
 }
@@ -895,14 +895,14 @@ hr {
 	margin: 1.5rem 0;
 	border-radius: 10px !important;
 	/* border: 1.5px solid var(--colour-grey-2) !important; */
-	background-color: var(--colour-grey-6);
+	background-color: var(--colour-paper-semidark);
 }
 
 table tr th {
 	font-family: var(--font-bold);
 	font-weight: normal;
 	border-bottom: 1px solid var(--colour-grey-2);
-	background-color: var(--colour-grey-4);
+	background-color: var(--colour-paper-dark);
 	/* border-top: 2px solid var(--colour-grey-2); */
 }
 
@@ -1104,7 +1104,7 @@ table tbody + tbody {
 }
 
 .md-def-title {
-	font-family: var(--font-second);
+	font-family: var(--font-hei-2);
 	font-weight: normal;
 	color: var(--colour-grey-1);
 	margin-left: 0.5rem;
@@ -1171,7 +1171,7 @@ table tbody + tbody {
 /* • ‣ ⁍ ⏹ ⏺ ● */
 
 .md-toc-h2 {
-	font-family: var(--font-second);
+	font-family: var(--font-hei-2);
 	font-size: 1rem;
 	font-weight: normal;
 	margin-top: 0.5rem;

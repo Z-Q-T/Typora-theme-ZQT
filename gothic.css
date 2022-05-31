@@ -45,7 +45,7 @@ html,
 body,
 #write{
 	background: #fcfcfc;
-	font-family: 'TeXGyreAdventor', "Century Gothic",  "HYQiHei 50S", 'Yu Gothic', 'Raleway', "STHeiti", sans-serif;
+	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Raleway', "STHeiti", sans-serif;
 	font-weight: 300;
 }
 h1,
@@ -55,7 +55,7 @@ h4,
 h5,
 h6 {
 	color: #111;
-	font-family: 'TeXGyreAdventor', "Century Gothic", "HYQiHei 55S", 'Yu Gothic', 'Ubuntu', "STHeiti", sans-serif;
+	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Ubuntu', "STHeiti", sans-serif;
 }
 
 html {

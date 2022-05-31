@@ -1,28 +1,33 @@
 :root {
 	--colour-body: rgb(0, 0, 0);
-	--colour-grey-0: rgb(50, 50, 50);
-	--colour-grey-1: rgb(97, 97, 97);
-	--colour-grey-2: rgb(158, 158, 158);
-	--colour-grey-3: rgb(195, 195, 195);
-	--colour-grey-4: rgb(218, 218, 218);
-	--colour-grey-5: rgb(232, 232, 232);
-	--colour-grey-6: rgb(243, 243, 243);
-	--colour-paper: rgb(248, 248, 245);
-	--colour-paper-semidark: rgb(242, 242, 236);
-	--colour-paper-dark: rgb(230, 230, 224);
-	--colour-iden-1: hsl(154, 59%, 40%);
-	--colour-iden-2: hsl(153, 55%, 50%);
-	--colour-iden-3: hsl(152, 50%, 65%);
-	--colour-iden-4: hsl(151, 45%, 80%);
-	--colour-iden-5: hsl(151, 69%, 91%);
-	--colour-iden-6: hsl(150, 40%, 95%);
-	--colour-code-background: rgb(50, 55, 55);
+	--colour-gray-0: rgb(50, 50, 50);
+	--colour-gray-1: rgb(97, 97, 97);
+	--colour-gray-2: rgb(158, 158, 158);
+	--colour-gray-3: rgb(195, 195, 195);
+	--colour-gray-4: rgb(218, 218, 218);
+	--colour-gray-5: rgb(232, 232, 232);
+	--colour-gray-6: rgb(243, 243, 243);
+	--colour-paper: rgb(245, 248, 245);
+	--colour-paper-semidark: rgb(238, 242, 238);
+	--colour-paper-dark: rgb(225, 235, 225);
+	--colour-green-0: hsl(150, 72%, 26%);
+	--colour-green-1: hsl(150, 59%, 40%);
+	--colour-green-2: hsl(150, 55%, 50%);
+	--colour-green-3: hsl(150, 50%, 65%);
+	--colour-green-4: hsl(150, 45%, 80%);
+	--colour-green-5: hsl(150, 69%, 91%);
+	--colour-green-6: hsl(150, 40%, 95%);
+	/* --colour-purple-1: hsl(271, 47%, 45%);
+	--colour-purple-2: hsl(271, 55%, 63%);
+	--colour-purple-3: hsl(272, 73%, 80%);
+	--colour-purple-4: hsl(270, 61%, 88%); */
+	--colour-code-background: rgb(49, 58, 55);
 	--colour-mathblock-background: rgb(42, 82, 70);
 	/* --colour-footnote-num:rgb(65, 71, 82); */
 	/* --colour-quote: rgb(112, 136, 172); */
 	/* --colour-quote-mark:#5c5c5c; */
-	--colour-hyperlink: var(--colour-iden-1);
-	--colour-comment: rgb(245, 43, 77);
+	--colour-hyperlink: var(--colour-green-1);
+	--colour-comment: rgb(194, 106, 128);
 	--colour-search-unselected: rgba(226, 142, 201, 0.75);
 	--colour-search-selected: rgb(255, 0, 200);
 	--font-hei-1: "HYqihei 95S", sans-serif;
@@ -131,12 +136,12 @@ h1 {
 	color: var(--colour-body);
 	font-size: 3rem;
 	line-height: 4rem;
-	margin: 16rem auto 6rem;
+	margin: 30rem auto 6rem;
 	/* padding: 0.25em 0.5em; */
 	text-align: center;
 	width: fit-content !important;
 	max-width: 35rem;
-	border-bottom: 0.3rem solid var(--colour-iden-2);
+	border-bottom: 0.3rem solid var(--colour-green-2);
 }
 
 h2 {
@@ -145,14 +150,17 @@ h2 {
 	color: var(--colour-body);
 	font-size: 2.5rem;
 	line-height: 3rem;
-	margin: 12rem auto 4rem;
+	margin: 20rem auto 3rem;
 	/* padding: 0em 0.5em 0.25em; */
+	/* padding-top: 2rem; */
 	text-align: center;
 	width: fit-content !important;
-	max-width: 30rem;
-	/* border-bottom: 0.15em solid var(--colour-iden-2); */
-	/* background-color: var(--colour-iden-5); */
-	border-bottom: 0.2rem solid var(--colour-body);
+	box-shadow: inset 0 -0.1em 0 var(--colour-green-2);
+	/* width: 100% !important; */
+	/* max-width: 30rem; */
+	/* border-bottom: 0.15em solid var(--colour-green-2); */
+	/* background-color: var(--colour-green-5); */
+	/* border-top: 0.1rem solid var(--colour-body); */
 }
 
 h3 {
@@ -161,13 +169,16 @@ h3 {
 	color: var(--colour-body);
 	font-size: 2rem;
 	line-height: 2.5rem;
-	margin: 8rem auto 3rem;
+	margin: 10rem auto 2rem;
+	/* padding-top: 1rem; */
 	text-align: center;
 	/* padding: 0em 0.5em 0.25em; */
 	width: fit-content !important;
-	max-width: 30rem;
-	/* background-color: var(--colour-iden-5); */
-	border-bottom: 0.1rem solid var(--colour-body);
+	box-shadow: inset 0 -0.1em 0 var(--colour-green-4);
+	/* width: 100% !important; */
+	/* max-width: 30rem; */
+	/* background-color: var(--colour-green-5); */
+	/* border-top: 0.1rem dotted var(--colour-gray-3); */
 }
 
 h4 {
@@ -176,11 +187,11 @@ h4 {
 	color: var(--colour-body);
 	font-size: 1.5rem;
 	line-height: 2rem;
-	margin: 3rem auto 1rem;
+	margin: 5rem auto 1.5rem;
 	text-align: center;
 	/* padding-left:2rem; */
 	width: fit-content !important;
-	/* border-left: 0.25rem solid var(--colour-iden-2); */
+	/* border-left: 0.25rem solid var(--colour-green-2); */
 }
 
 h5 {
@@ -189,11 +200,11 @@ h5 {
 	color: var(--colour-body);
 	font-size: 1.25rem;
 	line-height: 1.5rem;
-	margin: 2rem 0 1rem;
+	margin: 3rem 0 1rem;
 	text-align: left;
 	/* padding-left:2rem; */
 	width: fit-content !important;
-	/* border-left: 0.15rem solid var(--colour-grey-0); */
+	/* border-left: 0.15rem solid var(--colour-gray-0); */
 }
 
 h6 {
@@ -202,17 +213,17 @@ h6 {
 	color: var(--colour-body);
 	font-size: 1rem;
 	line-height: 1.25rem;
-	margin: 0.5rem 0 0.5rem;
+	margin: 1rem 0 0.5rem;
 	text-align: left;
-	padding-left: 1rem;
+	padding-left: 2rem;
 	width: fit-content !important;
-	/* border-left: 3px solid var(--colour-grey-2); */
+	/* border-left: 3px solid var(--colour-gray-2); */
 }
 
 p {
 	color: var(--colour-body);
-	font-size: 18px;
-	line-height: calc(5 / 3) !important;
+	font-size: 1rem;
+	line-height: calc(16 / 9) !important;
 	/* margin: 1.67rem 0 1.67rem 0; */
 	/*段落之间空一行*/
 	margin: 0;
@@ -277,7 +288,7 @@ ul li p {
 }
 
 .ul-list {
-	color: var(--colour-grey-1);
+	color: var(--colour-gray-1);
 	padding-left: 3rem !important;
 	padding-right: 2rem;
 }
@@ -306,7 +317,7 @@ ol li p {
 }
 
 .ol-list {
-	color: var(--colour-grey-1);
+	color: var(--colour-gray-1);
 	padding-left: 3rem;
 	padding-right: 2rem;
 }
@@ -314,13 +325,13 @@ ol li p {
 /* 引用 */
 
 blockquote {
-	margin: 1rem 2rem;
-	padding: 20pt;
+	margin: 2rem;
+	padding: 1.5rem 2rem;
 	/* border-left: 0.2rem solid #ccc; */
 	border-radius: 10px;
-	background-color: var(--colour-paper-dark);
+	background-color: var(--colour-paper-semidark);
 	overflow: visible;
-	font-size: 0.9rem;
+	font-size: 16px;
 }
 
 blockquote p {
@@ -336,13 +347,13 @@ blockquote li p {
 }
 
 blockquote .ul-list {
-	color: var(--colour-grey-2);
+	color: var(--colour-gray-2);
 	padding-left: 3em !important;
 	padding-right: 2em;
 }
 
 blockquote .ol-list {
-	color: var(--colour-grey-2);
+	color: var(--colour-gray-2);
 	padding-left: 3em;
 	padding-right: 2em;
 }
@@ -353,7 +364,7 @@ blockquote:before {
 		"Times New Roman", "Georgia", serif;
 	font-size: 2rem;
 	/* text-align: center; */
-	color: var(--colour-grey-1);
+	color: var(--colour-gray-0);
 	float: none;
 	position: absolute;
 	left: 2em;
@@ -369,14 +380,14 @@ blockquote:before {
 	/* vertical-align: 1rem; */
 	/* height: 0rem;
     width: 1.5rem; */
-	/* background-color: var(--colour-iden-5); */
+	/* background-color: var(--colour-green-5); */
 }
 
 /* blockquote::after {
 	content: close-quote;
 	font-family: "source han sans", "bembo","Adobe Garamond Pro","Times New Roman","Georgia",serif;
     font-size: 1.5rem;
-    color: var(--colour-iden-1);
+    color: var(--colour-green-1);
     float: none;
     position: absolute;
     right: 2.75rem;
@@ -431,9 +442,9 @@ h6 code {
 /* 段落内代码 */
 
 code {
-	background: var(--colour-grey-0);
-	color: var(--colour-grey-6);
-	border: 0px solid var(--colour-iden-3);
+	background: var(--colour-code-background);
+	color: var(--colour-gray-6);
+	border: 0px solid var(--colour-green-3);
 	border-radius: 5px;
 	padding: 0.1em 0.3em;
 	font-size: 0.9em;
@@ -443,13 +454,13 @@ code {
 }
 
 blockquote code {
-	color: var(--colour-grey-6);
+	color: var(--colour-gray-6);
 }
 
 /* 单独代码段 */
 
 .md-fences {
-	background: var(--colour-grey-0) !important;
+	background: var(--colour-code-background) !important;
 	border: 0px solid #ddd;
 	border-radius: 8px;
 	margin: 1.5rem 0rem;
@@ -460,7 +471,7 @@ blockquote code {
 }
 
 /* blockquote .md-fences {
-	border: 2px solid var(--colour-grey-3);
+	border: 2px solid var(--colour-gray-3);
 } */
 
 /**apply to code fences with plan text**/
@@ -474,7 +485,7 @@ blockquote code {
 }
 
 .md-fences .code-tooltip {
-	background-color: var(--colour-grey-0);
+	background-color: var(--colour-code-background);
 	border-radius: 10px;
 	text-indent: 0 !important;
 }
@@ -531,12 +542,12 @@ blockquote code {
 /* 代码高亮 */
 
 .cm-s-inner {
-	background-color: var(--colour-grey-0);
+	background-color: var(--colour-code-background);
 	color: rgba(233, 237, 237, 1);
 }
 
 .cm-s-inner .CodeMirror-gutters {
-	background: var(--colour-grey-0);
+	background: var(--colour-code-background);
 	color: rgb(83, 127, 126);
 	border: none;
 }
@@ -769,7 +780,7 @@ blockquote code {
 
 .md-task-list-item > input:checked:before,
 .md-task-list-item > input[checked]:before {
-	background: var(--colour-iden-1);
+	background: var(--colour-green-1);
 	border-width: 0px;
 	display: inline-block;
 	transition: background-color 200ms ease-in-out;
@@ -803,7 +814,7 @@ blockquote code {
 /* 以上内容摘自Typora自带主题pixyll，略有修改，可能受版权保护 */
 
 input {
-	color: var(--colour-iden-1);
+	color: var(--colour-green-1);
 }
 
 .task-list {
@@ -884,8 +895,8 @@ hr {
 	margin-right: auto;
 	border-top-width: 1px;
 	/* max-width: 300px; */
-	width: 50%;
-	border-color: rgb(204, 204, 204);
+	width: 100%;
+	border-color: var(--colour-gray-3);
 }
 
 /* 表格 */
@@ -894,16 +905,16 @@ hr {
 	font-size: 16px;
 	margin: 1.5rem 0;
 	border-radius: 10px !important;
-	/* border: 1.5px solid var(--colour-grey-2) !important; */
+	/* border: 1.5px solid var(--colour-gray-2) !important; */
 	background-color: var(--colour-paper-semidark);
 }
 
 table tr th {
 	font-family: var(--font-bold);
 	font-weight: normal;
-	border-bottom: 1px solid var(--colour-grey-2);
+	border-bottom: 1px solid var(--colour-green-3);
 	background-color: var(--colour-paper-dark);
-	/* border-top: 2px solid var(--colour-grey-2); */
+	/* border-top: 2px solid var(--colour-gray-2); */
 }
 
 .td-span {
@@ -918,7 +929,7 @@ table th {
 	padding: 0.5em 0.5em;
 	line-height: 1.25em;
 	vertical-align: bottom;
-	/* border-top: 1px solid var(--colour-grey-3); */
+	/* border-top: 1px solid var(--colour-gray-3); */
 	text-align: center;
 }
 
@@ -926,7 +937,7 @@ table td {
 	padding: 0.5em 0.5em;
 	line-height: 1.25em;
 	vertical-align: top;
-	border-top: 1px solid var(--colour-grey-3);
+	border-top: 0.5px solid var(--colour-gray-3);
 	text-align: center;
 }
 
@@ -993,10 +1004,11 @@ table tbody + tbody {
 
 .md-footnote {
 	/* 这是文间标注 */
-	background-color: var(--colour-iden-4) !important;
-	color: var(--colour-body) !important;
+	background-color: var(--colour-green-4) !important;
+	color: var(--colour-green-0) !important;
+	border-radius: 2px !important; 
 	/* border: 1px solid rgb(121, 121, 121); */
-	padding: 0px 3px 1px 3px !important;
+	padding: 1px 3px !important;
 	text-align: left;
 	/* line-height: 1.25em; */
 }
@@ -1004,22 +1016,22 @@ table tbody + tbody {
 .md-def-name {
 	/* 以下是文后详细注释 */
 	padding: 0 0.25rem;
-	color: var(--colour-body);
-	font-family: var(--font-bold);
+	background-color: var(--colour-green-4);
+	color: var(--colour-green-0);
+	/* font-family: var(--font-bold); */
 	font-size: 0.9rem;
 	font-weight: normal;
-	border-radius: 4px;
-	background-color: var(--colour-iden-4);
+	border-radius: 2px;
 }
 
 .md-def-name::before {
 	content: "" !important;
-	color: var(--colour-grey-1);
+	color: var(--colour-gray-1);
 }
 
 .md-def-name::after {
 	content: "" !important;
-	color: var(--colour-grey-1);
+	color: var(--colour-gray-1);
 }
 
 .md-def-split {
@@ -1031,13 +1043,13 @@ table tbody + tbody {
 .md-def-split::before {
 	content: "" !important;
 	font-family: var(--font-bold);
-	color: var(--colour-grey-1);
+	color: var(--colour-gray-1);
 }
 
 .md-def-content {
 	font-family: var(--font-body);
 	font-size: 0.9rem;
-	color: var(--colour-grey-1);
+	color: var(--colour-gray-1);
 	text-align: left;
 	word-wrap: break-word !important;
 	word-break: break-all !important;
@@ -1096,7 +1108,7 @@ table tbody + tbody {
 .md-def-link .md-def-content {
 	font-family: var(--font-body);
 	font-size: 0.9rem;
-	color: var(--colour-grey-1);
+	color: var(--colour-gray-1);
 }
 
 .md-def-link .md-def-split::before {
@@ -1106,7 +1118,7 @@ table tbody + tbody {
 .md-def-title {
 	font-family: var(--font-hei-2);
 	font-weight: normal;
-	color: var(--colour-grey-1);
+	color: var(--colour-gray-1);
 	margin-left: 0.5rem;
 	text-align: left;
 	display: inline;
@@ -1117,14 +1129,14 @@ table tbody + tbody {
 .md-def-title::before,
 .md-def-title::after {
 	content: '"';
-	color: var(--colour-grey-1);
+	color: var(--colour-gray-1);
 }
 
 /* 目录 */
 
 .md-toc-content {
-	background-color: var(--colour-iden-6);
-	border: 0px solid var(--colour-grey-2);
+	background-color: var(--colour-green-6);
+	border: 0px solid var(--colour-gray-2);
 	border-radius: 10px;
 	margin: 2rem 1rem;
 	padding: 1rem;
@@ -1165,7 +1177,7 @@ table tbody + tbody {
 
 .md-toc-h1 .md-toc-inner {
 	/* padding: 0.1em 0.2em 0 0.2em;
-	border-top: 0.2em solid var(--colour-iden-1); */
+	border-top: 0.2em solid var(--colour-green-1); */
 }
 
 /* • ‣ ⁍ ⏹ ⏺ ● */

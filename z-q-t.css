@@ -1,3 +1,72 @@
+
+/*定义全局色彩和字体变量*/
+@font-face {
+	font-family: "Heiti";
+	src: local("HYQiHei-40S UltraLight");
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Heiti";
+	src: local("HYQiHei-55S Book");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Heiti";
+	src: local("HYQiHei-75S Bold");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Heiti";
+	src: local("HYQiHei-85S Heavy");
+	font-style: normal;
+	font-weight: 800;
+}
+@font-face {
+	font-family: "Heiti";
+	src: local("HYQiHei-95S ExtraBlack");
+	font-style: normal;
+	font-weight: 900;
+}
+/* 
+@font-face {
+	font-family: "segoeuibold";
+	src: local("segoeuib"), url("./z-q-t/segoeuib.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "segoeuisemibold";
+	src: local("seguisb"), url("./z-q-t/seguisb.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "segoeuiitalic";
+	src: local("segoeuii"), url("./z-q-t/segoeuii.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "segoeuil";
+	src: local("segoeuil"), url("./z-q-t/segoeuil.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+} */
+
+@font-face {
+	font-family: "Source Code Pro Bold";
+	src: local("Source Code Pro Bold"),
+		url("./z-q-t/SourceCodePro-Bold.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+
 :root {
 	--colour-body: rgb(0, 0, 0);
 	--colour-gray-0: rgb(50, 50, 50);
@@ -30,12 +99,11 @@
 	--colour-comment: rgb(194, 106, 128);
 	--colour-search-unselected: rgba(226, 142, 201, 0.75);
 	--colour-search-selected: rgb(255, 0, 200);
-	--font-hei-1: "HYqihei 95S", sans-serif;
-	--font-hei-2: "HYqihei 75S", sans-serif;
+	--font-hei: "Heiti", "HYqihei", sans-serif;
+	/* --font-hei-2: "HYqihei 75S", sans-serif; */
 	/* --font-song: "Source Han Serif SC", "Source Han Serif CN", "思源宋体", serif; */
-	--font-body: "HYqihei 55S", sans-serif;
-	--font-bold: "HYqihei 85S", sans-serif;
-	--font-thinnest: "HYqihei 40S", sans-serif;
+	/* --font-bold: "HYqihei 85S", sans-serif; */
+	/* --font-thinnest: "HYqihei 40S", sans-serif; */
 	/* --font-italic: "segoeuiitalic", "HYZhongsongs", sans-serif; */
 	--font-code: "Source Code Pro", "consolas", "HYqihei 65S", monospace;
 	--font-code-sb: "Source Code Pro Medium", "consolas", "HYqihei 75S",
@@ -50,43 +118,6 @@
 	--size-h5: calc(1.2 * var(--size-p));
 }
 
-/*定义全局色彩和字体变量*/
-
-@font-face {
-	font-family: "segoeuibold";
-	src: local("segoeuib"), url("./z-q-t/segoeuib.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "segoeuisemibold";
-	src: local("seguisb"), url("./z-q-t/seguisb.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "segoeuiitalic";
-	src: local("segoeuii"), url("./z-q-t/segoeuii.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "segoeuil";
-	src: local("segoeuil"), url("./z-q-t/segoeuil.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "Source Code Pro Bold";
-	src: local("Source Code Pro Bold"),
-		url("./z-q-t/SourceCodePro-Bold.otf") format("opentype");
-	font-style: normal;
-	font-weight: normal;
-}
 
 /* 包含#write的部分只会对书写区域的内容产生影响，而不会影响到菜单、对话框等界面 */
 
@@ -94,7 +125,8 @@ html,
 body,
 #write {
 	background: var(--colour-paper);
-	font-family: var(--font-body);
+	font-family: var(--font-hei);
+	font-weight: 400;
 }
 
 html {
@@ -131,8 +163,8 @@ html {
 /* 标题与正文 */
 
 h1 {
-	font-family: var(--font-hei-1);
-	font-weight: normal;
+	font-family: var(--font-hei);
+	font-weight: 900;
 	color: var(--colour-body);
 	font-size: 3rem;
 	line-height: 4rem;
@@ -145,8 +177,8 @@ h1 {
 }
 
 h2 {
-	font-family: var(--font-hei-1);
-	font-weight: normal;
+	font-family: var(--font-hei);
+	font-weight: 900;
 	color: var(--colour-body);
 	font-size: 2.5rem;
 	line-height: 3rem;
@@ -164,8 +196,7 @@ h2 {
 }
 
 h3 {
-	font-family: var(--font-hei-2);
-	font-weight: normal;
+	font-family: var(--font-hei);font-weight: 700;
 	color: var(--colour-body);
 	font-size: 2rem;
 	line-height: 2.5rem;
@@ -182,8 +213,7 @@ h3 {
 }
 
 h4 {
-	font-family: var(--font-hei-2);
-	font-weight: normal;
+	font-family: var(--font-hei);font-weight: 700;
 	color: var(--colour-body);
 	font-size: 1.5rem;
 	line-height: 2rem;
@@ -195,8 +225,7 @@ h4 {
 }
 
 h5 {
-	font-family: var(--font-hei-2);
-	font-weight: normal;
+	font-family: var(--font-hei);font-weight: 700;
 	color: var(--colour-body);
 	font-size: 1.25rem;
 	line-height: 1.5rem;
@@ -208,8 +237,7 @@ h5 {
 }
 
 h6 {
-	font-family: var(--font-hei-2);
-	font-weight: normal;
+	font-family: var(--font-hei);font-weight: 700;
 	color: var(--colour-body);
 	font-size: 1rem;
 	line-height: 1.25rem;
@@ -237,11 +265,14 @@ p {
 /* 加粗文本 */
 
 p strong {
-	font-family: var(--font-bold);
-	font-weight: normal;
-	/*这会取代浏览器的用户代理加粗设置，如果用户的电脑上没有--font-bold字体，那可能导致加粗文本显示出来和普通文本一样。*/
+	font-family: var(--font-hei);
+	font-weight: 800;
+	
 }
-
+/* 高亮文本 */
+mark {
+	background-color: rgb(255, 233, 107, 0.8);
+}
 /* 超链接 */
 
 a,
@@ -400,7 +431,7 @@ blockquote:before {
 /* 文章注释（导出时不显示） */
 
 .md-comment {
-	font-family: var(--font-body);
+	font-family: var(--font-hei);
 	font-size: 1rem;
 	color: var(--colour-comment);
 }
@@ -723,7 +754,7 @@ blockquote code {
 
 .md-rawblock-before,
 .md-rawblock-after {
-	font-family: var(--font-body);
+	font-family: var(--font-hei);
 	font-size: 0.9rem;
 	color: #ccc;
 }
@@ -910,8 +941,8 @@ hr {
 }
 
 table tr th {
-	font-family: var(--font-bold);
-	font-weight: normal;
+	font-family: var(--font-hei);
+	font-weight: 800;
 	border-bottom: 1px solid var(--colour-green-3);
 	background-color: var(--colour-paper-dark);
 	/* border-top: 2px solid var(--colour-gray-2); */
@@ -1006,7 +1037,7 @@ table tbody + tbody {
 	/* 这是文间标注 */
 	background-color: var(--colour-green-4) !important;
 	color: var(--colour-green-0) !important;
-	border-radius: 2px !important; 
+	border-radius: 2px !important;
 	/* border: 1px solid rgb(121, 121, 121); */
 	padding: 1px 3px !important;
 	text-align: left;
@@ -1042,12 +1073,13 @@ table tbody + tbody {
 
 .md-def-split::before {
 	content: "" !important;
-	font-family: var(--font-bold);
+	font-family: var(--font-hei);
+	font-weight: 800;
 	color: var(--colour-gray-1);
 }
 
 .md-def-content {
-	font-family: var(--font-body);
+	font-family: var(--font-hei);
 	font-size: 0.9rem;
 	color: var(--colour-gray-1);
 	text-align: left;
@@ -1071,16 +1103,16 @@ table tbody + tbody {
 .md-def-link .md-def-name {
 	padding: 0 0.25rem;
 	color: var(--colour-hyperlink);
-	font-family: var(--font-bold);
+	font-family: var(--font-hei);
+	font-weight: 800;
 	font-size: 0.9rem;
-	font-weight: normal;
 	border-radius: 4px;
 	background-color: transparent;
 	display: inline;
 }
 
 .md-def-link {
-	font-family: var(--font-body);
+	font-family: var(--font-hei);
 	font-weight: normal;
 	text-align: left;
 }
@@ -1088,13 +1120,15 @@ table tbody + tbody {
 .md-def-link .md-def-name::before {
 	content: "[" !important;
 	color: var(--colour-hyperlink);
-	font-family: var(--font-bold);
+	font-family: var(--font-hei);
+	font-weight: 800;
 }
 
 .md-def-link .md-def-name::after {
 	content: "]" !important;
 	color: var(--colour-hyperlink);
-	font-family: var(--font-bold);
+	font-family: var(--font-hei);
+	font-weight: 800;
 }
 
 .md-def-link .md-def-name {
@@ -1106,7 +1140,7 @@ table tbody + tbody {
 } */
 
 .md-def-link .md-def-content {
-	font-family: var(--font-body);
+	font-family: var(--font-hei);
 	font-size: 0.9rem;
 	color: var(--colour-gray-1);
 }
@@ -1116,8 +1150,7 @@ table tbody + tbody {
 }
 
 .md-def-title {
-	font-family: var(--font-hei-2);
-	font-weight: normal;
+	font-family: var(--font-hei);font-weight: 700;
 	color: var(--colour-gray-1);
 	margin-left: 0.5rem;
 	text-align: left;
@@ -1164,9 +1197,9 @@ table tbody + tbody {
 }
 
 .md-toc-h1 {
-	font-family: var(--font-bold);
+	font-family: var(--font-hei);
 	font-size: 1.3rem;
-	font-weight: normal;
+	font-weight: 800;
 	margin-top: 1.5rem;
 	/* padding-top: 1rem;
 	padding-bottom: 0.5rem; */
@@ -1183,9 +1216,8 @@ table tbody + tbody {
 /* • ‣ ⁍ ⏹ ⏺ ● */
 
 .md-toc-h2 {
-	font-family: var(--font-hei-2);
+	font-family: var(--font-hei);font-weight: 700;
 	font-size: 1rem;
-	font-weight: normal;
 	margin-top: 0.5rem;
 }
 
@@ -1198,7 +1230,7 @@ table tbody + tbody {
 }
 
 .md-toc-h3 {
-	font-family: var(--font-body);
+	font-family: var(--font-hei);
 	font-size: 1rem;
 	font-weight: normal;
 	margin-top: 0.25rem;
@@ -1210,7 +1242,7 @@ table tbody + tbody {
 }
 
 .md-toc-h4 {
-	font-family: var(--font-body);
+	font-family: var(--font-hei);
 	font-size: 1rem;
 	font-weight: normal;
 	margin-top: 0.15rem;
@@ -1222,9 +1254,9 @@ table tbody + tbody {
 }
 
 .md-toc-h5 {
-	font-family: var(--font-thinnest);
+	font-family: var(--font-hei);
+	font-weight: 300;
 	font-size: 1rem;
-	font-weight: normal;
 	margin-top: 0.1rem;
 }
 
@@ -1233,9 +1265,9 @@ table tbody + tbody {
 }
 
 .md-toc-h6 {
-	font-family: var(--font-thinnest);
+	font-family: var(--font-hei);
+	font-weight: 300;
 	font-size: 0.9rem;
-	font-weight: normal;
 	margin-top: 0rem;
 }
 

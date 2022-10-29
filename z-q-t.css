@@ -1,32 +1,41 @@
-
 /*定义全局色彩和字体变量*/
 @font-face {
 	font-family: "Heiti";
-	src: local("HYQiHei-40S UltraLight");
+	src: local("HYQiHei-40S UltraLight"), local("MiSans Light"),
+		local("HarmonyOS Sans SC Light"), local("Source Han Sans SC Light"),
+		local("Noto Sans SC Light"), local("Source Han Sans CN Light");
 	font-style: normal;
 	font-weight: 300;
 }
 @font-face {
 	font-family: "Heiti";
-	src: local("HYQiHei-55S Book");
+	src: local("HYQiHei-55S Book"), local("MiSans Regular"),
+		local("HarmonyOS Sans SC"), local("Source Han Sans SC"),
+		local("Noto Sans SC"), local("Source Han Sans CN");
 	font-style: normal;
 	font-weight: 400;
 }
 @font-face {
 	font-family: "Heiti";
-	src: local("HYQiHei-75S Bold");
+	src: local("HYQiHei-75S Bold"), local("MiSans Demibold"),
+		local("HarmonyOS Sans SC Medium"), local("Source Han Sans SC Medium"),
+		local("Noto Sans SC Medium"), local("Source Han Sans CN Medium");
 	font-style: normal;
 	font-weight: 700;
 }
 @font-face {
 	font-family: "Heiti";
-	src: local("HYQiHei-85S Heavy");
+	src: local("HYQiHei-85S Heavy"), local("MiSans Bold"),
+		local("HarmonyOS Sans SC Bold"), local("Source Han Sans SC Bold"),
+		local("Noto Sans SC Bold"), local("Source Han Sans CN Bold");
 	font-style: normal;
 	font-weight: 800;
 }
 @font-face {
 	font-family: "Heiti";
-	src: local("HYQiHei-95S ExtraBlack");
+	src: local("HYQiHei-95S ExtraBlack"), local("MiSans Heavy"),
+		local("HarmonyOS Sans SC Black"), local("Source Han Sans SC Heavy"),
+		local("Noto Sans SC Heavy"), local("Source Han Sans CN Heavy");
 	font-style: normal;
 	font-weight: 900;
 }
@@ -118,7 +127,6 @@
 	--size-h5: calc(1.2 * var(--size-p));
 }
 
-
 /* 包含#write的部分只会对书写区域的内容产生影响，而不会影响到菜单、对话框等界面 */
 
 html,
@@ -196,7 +204,8 @@ h2 {
 }
 
 h3 {
-	font-family: var(--font-hei);font-weight: 700;
+	font-family: var(--font-hei);
+	font-weight: 700;
 	color: var(--colour-body);
 	font-size: 2rem;
 	line-height: 2.5rem;
@@ -213,7 +222,8 @@ h3 {
 }
 
 h4 {
-	font-family: var(--font-hei);font-weight: 700;
+	font-family: var(--font-hei);
+	font-weight: 700;
 	color: var(--colour-body);
 	font-size: 1.5rem;
 	line-height: 2rem;
@@ -225,7 +235,8 @@ h4 {
 }
 
 h5 {
-	font-family: var(--font-hei);font-weight: 700;
+	font-family: var(--font-hei);
+	font-weight: 700;
 	color: var(--colour-body);
 	font-size: 1.25rem;
 	line-height: 1.5rem;
@@ -237,7 +248,8 @@ h5 {
 }
 
 h6 {
-	font-family: var(--font-hei);font-weight: 700;
+	font-family: var(--font-hei);
+	font-weight: 700;
 	color: var(--colour-body);
 	font-size: 1rem;
 	line-height: 1.25rem;
@@ -263,15 +275,28 @@ p {
 } */
 
 /* 加粗文本 */
-
-p strong {
+strong {
 	font-family: var(--font-hei);
 	font-weight: 800;
-	
+}
+/* 斜体文本 */
+em {
+	font-family: var(--font-hei);
+	font-style: normal !important;
+	/* text-emphasis-style: "\E000" !important; */
+	line-height: 0;
+	text-decoration: wavy underline 1px;
+	text-underline-offset: 3px;
+	/* text-emphasis: filled circle !important; */
+}
+/* 下划线文本 */
+u {
+	text-decoration: solid underline 2px;
+	text-underline-offset: 3px;
 }
 /* 高亮文本 */
 mark {
-	background-color: rgb(255, 233, 107, 0.8);
+	background-color: rgb(200, 234, 200, 0.9);
 }
 /* 超链接 */
 
@@ -1150,7 +1175,8 @@ table tbody + tbody {
 }
 
 .md-def-title {
-	font-family: var(--font-hei);font-weight: 700;
+	font-family: var(--font-hei);
+	font-weight: 700;
 	color: var(--colour-gray-1);
 	margin-left: 0.5rem;
 	text-align: left;
@@ -1216,7 +1242,8 @@ table tbody + tbody {
 /* • ‣ ⁍ ⏹ ⏺ ● */
 
 .md-toc-h2 {
-	font-family: var(--font-hei);font-weight: 700;
+	font-family: var(--font-hei);
+	font-weight: 700;
 	font-size: 1rem;
 	margin-top: 0.5rem;
 }

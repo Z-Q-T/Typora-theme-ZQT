@@ -296,7 +296,7 @@ u {
 }
 /* 高亮文本 */
 mark {
-	background-color: rgba(245, 225, 185, 0.9);
+	background-color: rgba(250, 235, 155, 0.9);
 }
 ::selection{
 	background-color: rgba(155, 200, 250, 0.9);

@@ -1,7 +1,7 @@
 /*定义全局色彩和字体变量*/
 @font-face {
 	font-family: "Heiti";
-	src: local("HYQiHei-40S UltraLight"), local("MiSans Light"),
+	src:local("HYQiHei 40S"), local("HYQiHei-40S UltraLight"), local("MiSans Light"),
 		local("HarmonyOS Sans SC Light"), local("Source Han Sans SC Light"),
 		local("Noto Sans SC Light"), local("Source Han Sans CN Light");
 	font-style: normal;
@@ -9,7 +9,7 @@
 }
 @font-face {
 	font-family: "Heiti";
-	src: local("HYQiHei-55S Book"), local("MiSans Regular"),
+	src: local("HYQiHei 55S"), local("HYQiHei-55S Book"), local("MiSans Regular"),
 		local("HarmonyOS Sans SC"), local("Source Han Sans SC"),
 		local("Noto Sans SC"), local("Source Han Sans CN");
 	font-style: normal;
@@ -17,7 +17,7 @@
 }
 @font-face {
 	font-family: "Heiti";
-	src: local("HYQiHei-75S Bold"), local("MiSans Demibold"),
+	src:local("HYQiHei 75S"), local("HYQiHei-75S Bold"), local("MiSans Demibold"),
 		local("HarmonyOS Sans SC Medium"), local("Source Han Sans SC Medium"),
 		local("Noto Sans SC Medium"), local("Source Han Sans CN Medium");
 	font-style: normal;
@@ -25,7 +25,7 @@
 }
 @font-face {
 	font-family: "Heiti";
-	src: local("HYQiHei-85S Heavy"), local("MiSans Bold"),
+	src:local("HYQiHei 85S"), local("HYQiHei-85S Heavy"), local("MiSans Bold"),
 		local("HarmonyOS Sans SC Bold"), local("Source Han Sans SC Bold"),
 		local("Noto Sans SC Bold"), local("Source Han Sans CN Bold");
 	font-style: normal;
@@ -33,7 +33,7 @@
 }
 @font-face {
 	font-family: "Heiti";
-	src: local("HYQiHei-95S ExtraBlack"), local("MiSans Heavy"),
+	src:local("HYQiHei 95S"), local("HYQiHei-95S ExtraBlack"), local("MiSans Heavy"),
 		local("HarmonyOS Sans SC Black"), local("Source Han Sans SC Heavy"),
 		local("Noto Sans SC Heavy"), local("Source Han Sans CN Heavy");
 	font-style: normal;

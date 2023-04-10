@@ -325,7 +325,7 @@ a:hover {
 
 ul {
 	margin: 0rem, 36px;
-	padding: 0 0 0 2rem !important;
+	padding: 0 0 0 2em !important;
 }
 
 ul li {
@@ -943,6 +943,16 @@ input {
 	padding: 2px;
 }
 
+/* 左侧大纲目录的缩进 */
+
+.outline-h1 > .outline-item ,
+.outline-h2 > .outline-item ,
+.outline-h3 > .outline-item ,
+.outline-h4 > .outline-item ,
+.outline-h5 > .outline-item ,
+.outline-h6 > .outline-item {
+	padding-left: 0em !important;
+}
 /* 水平分割线 */
 
 hr {

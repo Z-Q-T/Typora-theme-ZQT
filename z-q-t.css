@@ -85,9 +85,9 @@
 	--colour-gray-4: rgb(218, 218, 218);
 	--colour-gray-5: rgb(232, 232, 232);
 	--colour-gray-6: rgb(243, 243, 243);
-	--colour-paper: rgb(245, 248, 245);
-	--colour-paper-semidark: rgb(238, 242, 238);
-	--colour-paper-dark: rgb(225, 235, 225);
+	--colour-paper: rgb(241, 242, 240);
+	--colour-paper-semidark: rgb(231, 232, 230);
+	--colour-paper-dark: rgb(221, 222, 220);
 	--colour-green-0: hsl(150, 72%, 26%);
 	--colour-green-1: hsl(150, 59%, 40%);
 	--colour-green-2: hsl(150, 55%, 50%);
@@ -119,7 +119,7 @@
 		monospace;
 	--font-code-b: "Source Code Pro Semibold", "consolas", "HYqihei 85S",
 		monospace;
-	--size-p: 18px;
+	--size-p: 20px;
 	--size-h1: calc(2.5 * var(--size-p));
 	--size-h2: calc(2 * var(--size-p));
 	--size-h3: calc(1.75 * var(--size-p));
@@ -139,12 +139,13 @@ body,
 
 html {
 	font-size: var(--size-p);
+	tab-size: 4em;
 	/* hyphens: auto; */
 	/*标准字体大小，此后所有rem单位均以此为准*/
 }
 
 #write {
-	max-width: 43rem;
+	max-width: 40rem;
 	/*行长（每行字数）*/
 	text-align: justify;
 	padding: 2rem 1.5rem;
@@ -389,13 +390,13 @@ blockquote {
 	border-radius: 10px;
 	background-color: var(--colour-paper-semidark);
 	overflow: visible;
-	font-size: 16px;
+	font-size: 0.9rem;
 }
 
 blockquote p {
 	font-size: inherit;
 	text-indent: 2em;
-	line-height: 24px !important;
+	line-height: 1.35rem !important;
 	color: var(--colour-body);
 }
 

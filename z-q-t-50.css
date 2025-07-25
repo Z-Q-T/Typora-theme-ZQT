@@ -1,0 +1,10 @@
+@import "z-q-t.css";
+/*定义全局色彩和字体变量*/
+
+
+#write {
+	max-width: 50rem;
+	/*行长（每行字数）*/
+	text-align: justify;
+	padding: 2rem 1.5rem;
+}
